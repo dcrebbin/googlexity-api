@@ -1,7 +1,7 @@
 use actix_web::{web::Json, HttpResponse, Result};
 use reqwest::header::{HeaderMap, HeaderName, HeaderValue};
 use serde_json::json;
-use std::{error::Error, time::Instant};
+use std::{error::Error, fs, path::Path, time::Instant};
 
 use crate::{
     constants::{
@@ -16,6 +16,46 @@ use crate::{
         SearchResult,
     },
 };
+
+pub async fn retrieve_relevant_search_data() -> Result<HttpResponse, actix_web::Error> {
+    // load mock json response from folder then parse it to the relevant struct
+    let dir_path = "./src/constants/mock/google_search";
+
+    if !Path::new(dir_path).exists() {
+        return Err(actix_web::error::ErrorInternalServerError(format!(
+            "Directory does not exist: {}",
+            dir_path
+        )));
+    }
+    let mut custom_models: Vec<SearchResponse> = Vec::new();
+
+    let entries = fs::read_dir(dir_path).map_err(|e| {
+        actix_web::error::ErrorInternalServerError(format!("Failed to read directory: {}", e))
+    })?;
+
+    for entry_result in entries {
+        let entry = entry_result.map_err(|e| {
+            actix_web::error::ErrorInternalServerError(format!("Failed to read entry: {}", e))
+        })?;
+        let path = entry.path();
+
+        if path.is_file() && path.extension().and_then(|s| s.to_str()) == Some("json") {
+            let contents = fs::read_to_string(&path).map_err(|e| {
+                actix_web::error::ErrorInternalServerError(format!("Failed to read file: {}", e))
+            })?;
+            match serde_json::from_str::<SearchResponse>(&contents) {
+                Ok(response) => custom_models.push(response),
+                Err(e) => println!("Error parsing {}: {}", path.display(), e),
+            }
+        }
+    }
+
+    for response in custom_models {
+        println!("{:?}", response);
+    }
+
+    Ok(HttpResponse::Ok().json({}))
+}
 
 pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn Error>> {
     let start_time = Instant::now();

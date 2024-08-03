@@ -43,6 +43,10 @@ async fn main() -> std::io::Result<()> {
                     "/generate-content",
                     web::post().to(routes::googlexity::google_ai_completion),
                 );
+                r.route(
+                    "/relevant-results",
+                    web::get().to(routes::googlexity::retrieve_relevant_search_data),
+                );
             }))
     })
     .bind(("0.0.0.0", port))?
