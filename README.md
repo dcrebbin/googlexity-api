@@ -45,4 +45,41 @@ It does this by:
 
     - **deploy:** https://fly.io or https://console.cloud.google.com
 
+## Usage
 
+### Search
+
+Endpoint: `http://127.0.0.1:8080/api/search`
+
+Type: `POST`
+
+Headers:
+
+- `Content-Type: application/json`
+- `x-api-key: <YOUR_API_KEY>` (set in .env)
+
+Body:
+
+```json
+{
+    "query": "",
+     // (Required)
+     // The query to search for
+    "model": "",
+     // (Optional: defaults to "gemini-1.5-pro-latest")
+     // The Google AI model to use, see config.rs or 
+     // https://ai.google.dev/gemini-api/docs/models/gemini for options
+    "max_results": "", 
+     // (Optional: defaults to infinite)
+     // The maximum number of search results to use in the
+     // context of the last AI query
+    "max_optimizations": "", 
+     // (Optional: defaults to infinite)
+     // The maximum number of optimized queries that will be used 
+    "depthfull_search": ""
+     // (Optional: defaults to false)
+     // Whether to perform a depthful search. 
+     // a depthful search will scrape each website link
+     // and then use the content in the context of the last AI query 
+}
+```
