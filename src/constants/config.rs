@@ -1,4 +1,6 @@
-pub const GEMINI_MODEL: &str = "gemini-1.5-flash-latest";
+pub const GEMINI_MODEL_FLASH: &str = "gemini-1.5-flash-latest";
+pub const GEMINI_MODEL_PRO: &str = "gemini-1.5-pro-latest";
+pub const GEMINI_MODEL_EXPERIMENTAL: &str = "gemini-1.5-pro-exp-0801";
 
 pub const SEARCH_QUERY_OPTIMISATION_PROMPT: &str =
 "You are a search optimisation AI that takes a natural language query and returns an optimised search query.
@@ -10,12 +12,15 @@ Query:";
 
 pub const MOST_RELEVANT_CONTENT_PROMPT: &str = "You are a content retrieval AI that takes in a natural language query and search results and returns the most relevant content based on the search results.
 You should return the most relevant content that will answer the query.
+ONLY USE factual information and DO NOT make up information.
+Use real sources to support the information.
+Obey the laws of physics, mathematics, and the laws of the universe. (real world distances, angles, etc.)
+Think carefully before providing any information.
+Take into consideration the liklihood, credibility, and reliability of the information.
 Only return the most relevant content, do not return anything else.";
 
 pub const CUSTOM_FORMATTING_PROMPT: &str = "
-Ensure the content is neatly formatted and easy to read and contains citations to the sources of the content with links to the original source.
-
-Return optimised markdown content.
+Return optimised markdown content with the following template:
 
 Standard Template:
 
