@@ -175,11 +175,14 @@ pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn E
         optimised_search_response
     ));
 
-    let split_search_queries = optimised_search_response
-        .to_string()
-        .split(";")
-        .map(|s| s.to_string())
-        .collect::<Vec<String>>();
+    let split_search_queries = if optimised_search_response.contains(';') {
+        optimised_search_response
+            .split(';')
+            .map(|s| s.trim().to_string())
+            .collect::<Vec<String>>()
+    } else {
+        vec![optimised_search_response.trim().to_string()]
+    };
 
     log_query(&format!("Split search queries: {:?}", split_search_queries));
 
