@@ -5,7 +5,10 @@ use std::{error::Error, time::Instant};
 
 use crate::{
     constants::{
-        config::{GEMINI_MODEL, MOST_RELEVANT_CONTENT_PROMPT, SEARCH_QUERY_OPTIMISATION_PROMPT},
+        config::{
+            CUSTOM_FORMATTING_PROMPT, GEMINI_MODEL, MOST_RELEVANT_CONTENT_PROMPT,
+            SEARCH_QUERY_OPTIMISATION_PROMPT,
+        },
         utility::{log_error, log_query},
     },
     models::google_models::{
@@ -49,7 +52,7 @@ pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn E
 
     let ai_request = AiCompletionRequest {
         query: MOST_RELEVANT_CONTENT_PROMPT.to_string()
-            + CUSTOM_FORMATTING_PROMPT.to_string()
+            + CUSTOM_FORMATTING_PROMPT
             + "\n\nQuery:\n"
             + &body.query.clone()
             + "\n\nSearch Results:\n"
