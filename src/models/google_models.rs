@@ -70,7 +70,7 @@ pub struct SearchInformation {
 pub struct SearchResult {
     pub kind: String,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub website_html: Option<String>,
+    pub website_text_content: Option<String>,
     pub title: String,
     #[serde(rename = "htmlTitle")]
     pub html_title: String,

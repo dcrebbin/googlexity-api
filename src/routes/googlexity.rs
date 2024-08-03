@@ -1,7 +1,8 @@
 use actix_web::{web::Json, HttpResponse, Result};
 use futures_util::future::join_all;
-use reqwest::Client;
+use regex::Regex;
 use reqwest::header::{HeaderMap, HeaderName, HeaderValue};
+use reqwest::Client;
 use scraper::{Html, Selector};
 use serde_json::json;
 use std::{error::Error, fs, path::Path, time::Instant};
@@ -58,7 +59,7 @@ pub async fn retrieve_relevant_search_data() -> Result<HttpResponse, actix_web::
         all_search_items.extend(response.items);
     }
 
-    let updated_search_items = retrieve_all_website_html(all_search_items).await;
+    let updated_search_items = retrieve_all_website_text_content(all_search_items).await;
 
     Ok(HttpResponse::Ok().json(updated_search_items))
 }
@@ -69,28 +70,70 @@ pub async fn scrape_website(url: &str) -> Result<String, Box<dyn Error + Send + 
     let response = client.get(url).send().await?;
     let body = response.text().await?;
     let document = Html::parse_document(&body);
-    let selector = Selector::parse("body").unwrap();
-    let text_content = document
-        .select(&selector)
-        .next()
-        .ok_or("No body found")?
-        .text()
-        .collect::<Vec<_>>()
-        .join(" ");
+
+    let allowed_tags = [
+        "h1", "h2", "h3", "h4", "h5", "h6", "p", "span", "a", "article", "sup", "table","img", "link",
+        "figure",
+    ];
+
+    let mut text_content = String::new();
+
+    for tag in &allowed_tags {
+        let selector = Selector::parse(tag).unwrap();
+        for element in document.select(&selector) {
+            text_content.push_str(&element.text().collect::<Vec<_>>().join(" "));
+            text_content.push(' ');
+        }
+    }
+
+    let cleaned_text = clean_text(&text_content);
+
     let end_time = Instant::now();
     let duration = end_time.duration_since(start_time);
-    println!("{}", text_content);
+    println!("Scraped content: {}", cleaned_text);
     println!("Scraping time taken for {}: {:?}", url, duration);
-    Ok(text_content)
+    Ok(cleaned_text)
 }
-pub async fn retrieve_all_website_html(body: Vec<SearchResult>) -> Vec<SearchResult> {
+
+fn clean_text(input: &str) -> String {
+    // Remove script tags and their content
+    let script_regex = Regex::new(r"(?i)<script\b[^>]*>[\s\S]*?</script>").unwrap();
+    let without_scripts = script_regex.replace_all(input, "");
+
+    // Remove style tags and their content
+    let style_regex = Regex::new(r"(?i)<style\b[^>]*>[\s\S]*?</style>").unwrap();
+    let without_styles = style_regex.replace_all(&without_scripts, "");
+
+    // Remove inline JavaScript events
+    let js_events_regex = Regex::new(r#"(?i)\s(on\w+)="[^"]*""#).unwrap();
+    let without_js_events = js_events_regex.replace_all(&without_styles, "");
+
+    // Remove HTML comments
+    let comments_regex = Regex::new(r"<!--[\s\S]*?-->").unwrap();
+    let without_comments = comments_regex.replace_all(&without_js_events, "");
+
+    // Remove remaining HTML tags
+    let tags_regex = Regex::new(r"<[^>]+>").unwrap();
+    let without_tags = tags_regex.replace_all(&without_comments, "");
+
+    // Remove extra whitespace
+    let whitespace_regex = Regex::new(r"\s+").unwrap();
+    let cleaned_text = whitespace_regex
+        .replace_all(&without_tags, " ")
+        .trim()
+        .to_string();
+
+    cleaned_text
+}
+
+pub async fn retrieve_all_website_text_content(body: Vec<SearchResult>) -> Vec<SearchResult> {
     let start_time = Instant::now();
 
     let futures = body.into_iter().map(|mut item| async move {
         let cloned_link = item.link.clone();
         match scrape_website(&cloned_link).await {
             Ok(content) => {
-                item.website_html = Some(content);
+                item.website_text_content = Some(content);
             }
             Err(e) => {
                 log_error(&format!("Failed to scrape website: {}", e));

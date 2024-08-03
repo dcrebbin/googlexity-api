@@ -20,4 +20,4 @@ tokio = { version = "1.39.2", features = ["sync","full"] }
 yup-oauth2 = "11.0.0"
 base64 = "0.22.1"
 scraper = "0.19.1"
-
+regex = "1.10.6"
