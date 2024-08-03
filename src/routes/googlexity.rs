@@ -1,5 +1,8 @@
 use actix_web::{web::Json, HttpResponse, Result};
+use futures_util::future::join_all;
+use reqwest::Client;
 use reqwest::header::{HeaderMap, HeaderName, HeaderValue};
+use scraper::{Html, Selector};
 use serde_json::json;
 use std::{error::Error, fs, path::Path, time::Instant};
 
@@ -18,8 +21,7 @@ use crate::{
 };
 
 pub async fn retrieve_relevant_search_data() -> Result<HttpResponse, actix_web::Error> {
-    // load mock json response from folder then parse it to the relevant struct
-    let dir_path = "./src/constants/mock/google_search";
+    let dir_path = "./src/constants/mock/google_search/test";
 
     if !Path::new(dir_path).exists() {
         return Err(actix_web::error::ErrorInternalServerError(format!(
@@ -50,11 +52,60 @@ pub async fn retrieve_relevant_search_data() -> Result<HttpResponse, actix_web::
         }
     }
 
+    let mut all_search_items: Vec<SearchResult> = Vec::new();
+
     for response in custom_models {
-        println!("{:?}", response);
+        all_search_items.extend(response.items);
     }
 
-    Ok(HttpResponse::Ok().json({}))
+    let updated_search_items = retrieve_all_website_html(all_search_items).await;
+
+    Ok(HttpResponse::Ok().json(updated_search_items))
+}
+
+pub async fn scrape_website(url: &str) -> Result<String, Box<dyn Error + Send + Sync>> {
+    let start_time = Instant::now();
+    let client = Client::new();
+    let response = client.get(url).send().await?;
+    let body = response.text().await?;
+    let document = Html::parse_document(&body);
+    let selector = Selector::parse("body").unwrap();
+    let text_content = document
+        .select(&selector)
+        .next()
+        .ok_or("No body found")?
+        .text()
+        .collect::<Vec<_>>()
+        .join(" ");
+    let end_time = Instant::now();
+    let duration = end_time.duration_since(start_time);
+    println!("{}", text_content);
+    println!("Scraping time taken for {}: {:?}", url, duration);
+    Ok(text_content)
+}
+pub async fn retrieve_all_website_html(body: Vec<SearchResult>) -> Vec<SearchResult> {
+    let start_time = Instant::now();
+
+    let futures = body.into_iter().map(|mut item| async move {
+        let cloned_link = item.link.clone();
+        match scrape_website(&cloned_link).await {
+            Ok(content) => {
+                item.website_html = Some(content);
+            }
+            Err(e) => {
+                log_error(&format!("Failed to scrape website: {}", e));
+            }
+        }
+        item
+    });
+
+    let updated_search_results = join_all(futures).await;
+
+    let end_time = Instant::now();
+    let duration = end_time.duration_since(start_time);
+    println!("Full scraping time taken: {:?}", duration);
+
+    updated_search_results
 }
 
 pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn Error>> {
