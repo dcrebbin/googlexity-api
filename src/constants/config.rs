@@ -53,3 +53,9 @@ Sources:
 {ending_message}
 
 Query:";
+
+pub const DISALLOWED_URLS: &[&str] = &[
+    "https://www.reddit.com",
+    "https://x.com",
+    "https://www.twitter.com",
+];

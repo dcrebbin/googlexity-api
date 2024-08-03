@@ -7,6 +7,7 @@ use scraper::{Html, Selector};
 use serde_json::json;
 use std::{error::Error, fs, path::Path, time::Instant};
 
+use crate::constants::config::DISALLOWED_URLS;
 use crate::{
     constants::{
         config::{
@@ -74,9 +75,24 @@ pub async fn retrieve_relevant_search_data_mock() -> Result<HttpResponse, actix_
 }
 
 pub async fn scrape_website(url: &str) -> Result<String, Box<dyn Error + Send + Sync>> {
+    if DISALLOWED_URLS.contains(&url) {
+        return Ok(String::new());
+    }
+
     let start_time = Instant::now();
     let client = Client::new();
-    let response = client.get(url).send().await?;
+    let mut headers = HeaderMap::new();
+    headers.insert(
+        "User-Agent".parse::<HeaderName>().unwrap(),
+        "Googlexity/0.1.0".parse::<HeaderValue>().unwrap(),
+    );
+    headers.insert(
+        "Accept".parse::<HeaderName>().unwrap(),
+        "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"
+            .parse::<HeaderValue>()
+            .unwrap(),
+    );
+    let response = client.get(url).headers(headers).send().await?;
     let body = response.text().await?;
     let document = Html::parse_document(&body);
 
