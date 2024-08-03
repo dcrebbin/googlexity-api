@@ -1,5 +1,9 @@
 # Googlexity
 
+### Examples
+
+![Example 1](/public/example-1.png)
+
 ## Setup 
 
 1) Install Rust
