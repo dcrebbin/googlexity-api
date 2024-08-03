@@ -65,6 +65,9 @@ Body:
     "query": "",
      // (Required)
      // The query to search for
+    "custom_instructions": "",
+     // (Optional: defaults to "CUSTOM_FORMATTING_PROMPT" from `constants/config.rs`)
+     // Custom formatting instructions for the last AI query
     "model": "",
      // (Optional: defaults to "gemini-1.5-pro-latest")
      // The Google AI model to use, see config.rs or 

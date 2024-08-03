@@ -7,6 +7,7 @@ pub struct SearchRequest {
     pub model: Option<String>,
     pub max_results: Option<i32>,
     pub optimize_query: Option<bool>,
+    pub custom_instructions: Option<String>,
     pub max_optimizations: Option<i32>,
     pub depthfull_search: Option<bool>,
 }

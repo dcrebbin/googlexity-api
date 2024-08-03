@@ -76,7 +76,10 @@ pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn E
 
     let ai_request = AiCompletionRequest {
         query: MOST_RELEVANT_CONTENT_PROMPT.to_string()
-            + CUSTOM_FORMATTING_PROMPT
+            + &body
+                .custom_instructions
+                .clone()
+                .unwrap_or(CUSTOM_FORMATTING_PROMPT.to_string())
             + "\n\nQuery:\n"
             + &body.query.clone()
             + "\n\nSearch Results:\n"
