@@ -69,8 +69,11 @@ pub async fn google_ai_completion(
         "application/json".parse::<HeaderValue>().unwrap(),
     );
 
-    let model = "gemini-1.5-flash-latest";
     let function = "generateContent";
+    let model = body
+        .model
+        .clone()
+        .unwrap_or("gemini-1.5-flash-latest".to_string());
 
     let google_ai_completion_response = match client
         .post(format!(

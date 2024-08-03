@@ -135,6 +135,7 @@ pub struct Person {
 
 #[derive(Deserialize)]
 pub struct AiCompletionRequest {
+    pub model: Option<String>,
     pub query: String,
 }
 
