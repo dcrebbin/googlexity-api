@@ -33,11 +33,6 @@ async fn main() -> std::io::Result<()> {
             .wrap(middleware::guard_middleware::ApiKeyMiddleware)
             .wrap(Logger::new("%a %{User-Agent}i %r %s %b %T")) // Single, more detailed logger
             .service(web::scope("/api").configure(|r| {
-                r.route("/test", web::post().to(routes::test::test_route));
-                r.route(
-                    "/google-cloud-auth",
-                    web::get().to(routes::test::test_google_auth_route),
-                );
                 r.route("/search", web::post().to(routes::googlexity::search));
                 r.route(
                     "/generate-content",
