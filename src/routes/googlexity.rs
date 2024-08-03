@@ -1,7 +1,7 @@
-use actix_web::{body::MessageBody, web::Json, HttpResponse, Result};
+use actix_web::{web::Json, HttpResponse, Result};
 use reqwest::header::{HeaderMap, HeaderName, HeaderValue};
 use serde_json::json;
-use std::error::Error;
+use std::{error::Error, time::Instant};
 
 use crate::{
     constants::{
@@ -15,6 +15,8 @@ use crate::{
 };
 
 pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn Error>> {
+    let start_time = Instant::now();
+
     let optimised_search_response =
         google_ai_completion(actix_web::web::Json(AiCompletionRequest {
             query: SEARCH_QUERY_OPTIMISATION_PROMPT.to_string() + &body.query.clone(),
@@ -49,12 +51,18 @@ pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn E
     let most_relevant_search_results =
         google_ai_completion(actix_web::web::Json(ai_request)).await?;
 
+    let end_time = Instant::now();
+    let duration = end_time.duration_since(start_time);
+    println!("Googlexity Search time taken: {:?}", duration);
+
     Ok(HttpResponse::Ok().body(most_relevant_search_results))
 }
 
 pub async fn google_search(query: &str) -> Result<Vec<SearchResult>, Box<dyn Error>> {
     let search_api_key = std::env::var("SEARCH_API_KEY").unwrap();
     let search_engine_id = std::env::var("SEARCH_ENGINE_ID").unwrap();
+
+    let start_time = Instant::now();
 
     let client = reqwest::Client::new();
     let mut headers = HeaderMap::new();
@@ -78,6 +86,10 @@ pub async fn google_search(query: &str) -> Result<Vec<SearchResult>, Box<dyn Err
         }
     };
 
+    let end_time = Instant::now();
+    let duration = end_time.duration_since(start_time);
+    println!("Google Search time taken: {:?}", duration);
+
     if !google_search_response.status().is_success() {
         return Err(format!("HTTP error! status: {}", google_search_response.status()).into());
     }
@@ -96,6 +108,7 @@ pub async fn google_ai_completion(
     let gemini_api_key = std::env::var("GEMINI_API_KEY").unwrap();
     let client = reqwest::Client::new();
     let mut headers = HeaderMap::new();
+    let start_time = Instant::now();
     headers.insert(
         "Content-Type".parse::<HeaderName>().unwrap(),
         "application/json".parse::<HeaderValue>().unwrap(),
@@ -143,6 +156,14 @@ pub async fn google_ai_completion(
             google_ai_completion_response.status()
         ));
     }
+
+    let end_time = Instant::now();
+    let duration = end_time.duration_since(start_time);
+    println!(
+        "Google AI Completion using {} time taken: {:?}",
+        model, duration
+    );
+
     let google_ai_completion_response_json: GoogleAiGenerateContentResponse =
         match google_ai_completion_response
             .json::<GoogleAiGenerateContentResponse>()
