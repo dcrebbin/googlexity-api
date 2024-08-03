@@ -220,7 +220,7 @@ pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn E
         optimised_search_response
     ));
 
-    let split_search_queries: Vec<String> = if optimised_search_response.contains(";") {
+    let mut split_search_queries: Vec<String> = if optimised_search_response.contains(";") {
         optimised_search_response
             .split(';')
             .map(|s| s.replace("\n", ""))
@@ -228,6 +228,12 @@ pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn E
     } else {
         vec![optimised_search_response]
     };
+
+    if let Some(max_optimizations) = body.max_optimizations {
+        if let Ok(max) = usize::try_from(max_optimizations) {
+            split_search_queries = split_search_queries.into_iter().take(max).collect();
+        }
+    }
 
     log_query(&format!("Split search queries: {:?}", split_search_queries));
 
@@ -239,7 +245,18 @@ pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn E
         search_results.extend(search_items);
     }
 
-    let updated_search_results = retrieve_all_website_text_content(search_results).await;
+    // cut results down to max_results
+    if let Some(max_results) = body.max_results {
+        if let Ok(max) = usize::try_from(max_results) {
+            search_results = search_results.into_iter().take(max).collect();
+        }
+    }
+
+    let updated_search_results = if body.depthfull_search.unwrap_or(false) {
+        retrieve_all_website_text_content(search_results).await
+    } else {
+        search_results
+    };
 
     let stringified_search_results = serde_json::to_string(&updated_search_results)?;
 

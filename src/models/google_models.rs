@@ -5,6 +5,9 @@ use std::collections::HashMap;
 pub struct SearchRequest {
     pub query: String,
     pub model: Option<String>,
+    pub max_results: Option<i32>,
+    pub max_optimizations: Option<i32>,
+    pub depthfull_search: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
