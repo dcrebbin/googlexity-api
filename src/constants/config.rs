@@ -12,4 +12,8 @@ pub const MOST_RELEVANT_CONTENT_PROMPT: &str =
 You should return the most relevant content that will answer the query.
 Only return the most relevant content, do not return anything else.
 
+Ensure the content is neatly formatted and easy to read and contains citations to the sources of the content with links to the original source.
+
+Return optimised markdown content.
+
 Query:";
