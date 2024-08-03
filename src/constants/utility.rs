@@ -3,9 +3,7 @@ pub fn is_development() -> bool {
 }
 
 pub fn log_query(query: &str) {
-    if is_development() {
-        println!("{:?}", query);
-    }
+    println!("{:?}", query);
 }
 
 pub fn log_error(error: &str) {

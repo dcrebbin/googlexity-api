@@ -6,7 +6,7 @@ use std::{error::Error, time::Instant};
 use crate::{
     constants::{
         config::{GEMINI_MODEL, MOST_RELEVANT_CONTENT_PROMPT, SEARCH_QUERY_OPTIMISATION_PROMPT},
-        utility::log_error,
+        utility::{log_error, log_query},
     },
     models::google_models::{
         AiCompletionRequest, GoogleAiGenerateContentResponse, SearchRequest, SearchResponse,
@@ -24,11 +24,18 @@ pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn E
         }))
         .await?;
 
+    log_query(&format!(
+        "Optimised search response: {}",
+        optimised_search_response
+    ));
+
     let split_search_queries = optimised_search_response
         .to_string()
         .split(";")
         .map(|s| s.to_string())
         .collect::<Vec<String>>();
+
+    log_query(&format!("Split search queries: {:?}", split_search_queries));
 
     let mut search_results: Vec<SearchResult> = Vec::new();
 
@@ -42,6 +49,8 @@ pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn E
 
     let ai_request = AiCompletionRequest {
         query: MOST_RELEVANT_CONTENT_PROMPT.to_string()
+            + CUSTOM_FORMATTING_PROMPT.to_string()
+            + "\n\nQuery:\n"
             + &body.query.clone()
             + "\n\nSearch Results:\n"
             + &stringified_search_results,
