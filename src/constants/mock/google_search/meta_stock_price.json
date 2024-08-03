@@ -1,0 +1,724 @@
+{
+    "kind": "customsearch#search",
+    "url": {
+        "type": "application/json",
+        "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+    },
+    "queries": {
+        "request": [
+            {
+                "title": "Google Custom Search - meta stock price",
+                "totalResults": "160000000",
+                "searchTerms": "meta stock price",
+                "count": 10,
+                "startIndex": 1,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "37af15c1ae400405b"
+            }
+        ],
+        "nextPage": [
+            {
+                "title": "Google Custom Search - meta stock price",
+                "totalResults": "160000000",
+                "searchTerms": "meta stock price",
+                "count": 10,
+                "startIndex": 11,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "37af15c1ae400405b"
+            }
+        ]
+    },
+    "context": {
+        "title": "googlexity"
+    },
+    "searchInformation": {
+        "searchTime": 0.235513,
+        "formattedSearchTime": "0.24",
+        "totalResults": "160000000",
+        "formattedTotalResults": "160,000,000"
+    },
+    "items": [
+        {
+            "kind": "customsearch#result",
+            "title": "META Stock Price | Meta Platforms Inc. Stock Quote (U.S.: Nasdaq ...",
+            "htmlTitle": "<b>META Stock Price</b> | Meta Platforms Inc. Stock Quote (U.S.: Nasdaq ...",
+            "link": "https://www.marketwatch.com/investing/stock/meta",
+            "displayLink": "www.marketwatch.com",
+            "snippet": "META | Complete Meta Platforms Inc. stock news by MarketWatch. View real-time stock prices and stock quotes for a full financial overview.",
+            "htmlSnippet": "<b>META</b> | Complete <b>Meta</b> Platforms Inc. <b>stock</b> news by MarketWatch. View real-time <b>stock prices</b> and <b>stock quotes</b> for a full financial overview.",
+            "formattedUrl": "https://www.marketwatch.com/investing/stock/meta",
+            "htmlFormattedUrl": "https://www.marketwatch.com/investing/<b>stock</b>/<b>meta</b>",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkUxJdVkSa05sszT8o4js_DVqWCbjAVGEkXtfNCgjtAdKAT5As6OuiPmPq&s",
+                        "width": "310",
+                        "height": "163"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "apple-itunes-app": "app-id=336693422",
+                        "og:image": "https://s.wsj.net/public/resources/MWimages/MW-EG169_articl_NS_20160223171404.png",
+                        "twitter:card": "summary_large_image",
+                        "theme-color": "#2e2e2f",
+                        "og:site_name": "MarketWatch",
+                        "twitter:image:height": "630",
+                        "twitter:creator": "@marketwatch",
+                        "twitter:image": "https://s.wsj.net/public/resources/MWimages/MW-EG169_articl_NS_20160223171404.png",
+                        "article:publisher": "https://www.facebook.com/marketwatch",
+                        "instrumenttype": "Stock",
+                        "parsely-type": "post",
+                        "twitter:image:width": "1200",
+                        "price": "$488.14",
+                        "parsely-link": "https://www.marketwatch.com/investing/stock/meta",
+                        "exchangecountry": "US",
+                        "parsely-section": "Quotes",
+                        "exchangetimezone": "(UTC-05:00) Eastern Time (US & Canada)",
+                        "chartingsymbol": "STOCK/US/XNAS/META",
+                        "quotetime": "Aug 2, 2024 4:00 p.m. EDT",
+                        "tickersymbol": "META",
+                        "twitter:site:id": "624413",
+                        "twitter:domain": "marketwatch.com",
+                        "exchangeiso": "XNAS",
+                        "og:title": "META Stock Price | Meta Platforms Inc. Stock Quote (U.S.: Nasdaq) | MarketWatch",
+                        "chartjs": "https://sts3.wsj.net/bucket-a/maggie/static/js/chart-69a43a7fa0.min.js",
+                        "fb:pages": "131043201847",
+                        "pricechange": "-9.60",
+                        "parsely-title": "META Stock Price | Meta Platforms Inc. Stock Quote (U.S.: Nasdaq) | MarketWatch",
+                        "referrer": "no-referrer-when-downgrade",
+                        "fb:app_id": "283204329838",
+                        "parsely-tags": "PageType: Quotes, US:META, Stock, US: U.S.: Nasdaq, NAS, page-Overview",
+                        "uac-config": "%7b%22breakpoints%22%3a%7b%22at4units%22%3a0%2c%22at8units%22%3a656%2c%22at12units%22%3a976%2c%22at16units%22%3a1296%7d%7d",
+                        "pricecurrency": "USD",
+                        "viewport": "initial-scale=1.0, maximum-scale=2.0, width=device-width",
+                        "twitter:description": "META | Complete Meta Platforms Inc. stock news by MarketWatch. View real-time stock prices and stock quotes for a full financial overview.",
+                        "pricechangepercent": "-1.93%",
+                        "name": "Meta Platforms Inc.",
+                        "exchange": "U.S.: Nasdaq",
+                        "og:url": "https://www.marketwatch.com/investing/stock/meta"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://s.wsj.net/public/resources/MWimages/MW-EG169_articl_NS_20160223171404.png"
+                    }
+                ],
+                "listitem": [
+                    {
+                        "item": "Home",
+                        "name": "Home",
+                        "position": "1"
+                    },
+                    {
+                        "item": "Investing",
+                        "name": "Investing",
+                        "position": "2"
+                    },
+                    {
+                        "item": "Quotes",
+                        "name": "Quotes",
+                        "position": "3"
+                    },
+                    {
+                        "item": "Stocks",
+                        "name": "Stocks",
+                        "position": "4"
+                    },
+                    {
+                        "item": "United States",
+                        "name": "United States",
+                        "position": "5"
+                    },
+                    {
+                        "item": "META",
+                        "name": "META",
+                        "position": "6"
+                    },
+                    {
+                        "name": "Overview",
+                        "position": "7"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Meta Platforms, Inc. (META) Stock Price, News, Quote & History ...",
+            "htmlTitle": "Meta Platforms, Inc. (<b>META</b>) <b>Stock Price</b>, News, Quote &amp; History ...",
+            "link": "https://finance.yahoo.com/quote/META/",
+            "displayLink": "finance.yahoo.com",
+            "snippet": "Find the latest Meta Platforms, Inc. (META) stock quote, history, news and other vital information to help you with your stock trading and investing.",
+            "htmlSnippet": "Find the latest Meta Platforms, Inc. (<b>META</b>) <b>stock quote</b>, history, news and other vital information to help you with your stock trading and investing.",
+            "formattedUrl": "https://finance.yahoo.com/quote/META/",
+            "htmlFormattedUrl": "https://finance.yahoo.com/quote/<b>META</b>/",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIT0UPZw6gGL6F4EL7ldcEeCFtA8BD4Mfx5GWpWSrlkbiJxhJT96Z8oS7F&s",
+                        "width": "225",
+                        "height": "225"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "apple-itunes-app": "app-id=328412701, app-clip-bundle-id=com.yahoo.finance.clip-qsp, affiliate-data=ct=us.fin.mbl.smart-banner&pt=9029, app-argument=https://yfinance.onelink.me/3068494570?pid=SmartBanner&c=US_Acquisition_YMktg_337__&af_sub1=Acquisition&af_sub2=US_YMktg&af_sub3=&af_sub4=100000591&af_sub5=YahooFinanceApp__SmartBanner_",
+                        "theme-color": "#037B66",
+                        "twitter:title": "Meta Platforms, Inc. (META) Stock Price, News, Quote & History - Yahoo Finance",
+                        "al:ios:app_name": "Yahoo Finance",
+                        "ogimg": "https://pinhole.finance.yahoo.com/chart/META/__screenshot",
+                        "og:title": "Meta Platforms, Inc. (META) Stock Price, News, Quote & History - Yahoo Finance",
+                        "al:android:package": "com.yahoo.mobile.client.android.finance",
+                        "title": "Meta Platforms, Inc. (META) Stock Price, News, Quote & History - Yahoo Finance",
+                        "fb:pages": "458584288257241",
+                        "og:description": "Find the latest Meta Platforms, Inc. (META) stock quote, history, news and other vital information to help you with your stock trading and investing.",
+                        "twitter:dnt": "on",
+                        "al:ios:app_store_id": "328412701",
+                        "al:android:url": "intent://#Intent;scheme=yfinance;action=android.intent.action.VIEW;package=com.yahoo.mobile.client.android.finance;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.yahoo.mobile.client.android.finance;end",
+                        "fb:app_id": "458584288257241",
+                        "oath:guce:consent-host": "guce.yahoo.com",
+                        "twitter:site": "@YahooFinance",
+                        "viewport": "width=device-width, initial-scale=1",
+                        "twitter:description": "Find the latest Meta Platforms, Inc. (META) stock quote, history, news and other vital information to help you with your stock trading and investing.",
+                        "al:android:app_name": "Yahoo Finance"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://s.yimg.com/rz/p/yahoo.png"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Stock Info - Meta",
+            "htmlTitle": "Stock Info - Meta",
+            "link": "https://investor.fb.com/stock-info/",
+            "displayLink": "investor.fb.com",
+            "snippet": "Historical Price Look Up ; Volume42,610,270 ; Open$521.00 ; Closing Price$497.74 ; Day's High$527.17 ; Day's Low$492.10 ...",
+            "htmlSnippet": "Historical <b>Price</b> Look Up ; Volume42,610,270 ; Open$521.00 ; Closing <b>Price</b>$497.74 ; Day&#39;s High$527.17 ; Day&#39;s Low$492.10&nbsp;...",
+            "formattedUrl": "https://investor.fb.com/stock-info/",
+            "htmlFormattedUrl": "https://investor.fb.com/<b>stock</b>-info/",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD-_VQn9mv22wyuHpIsWAgm2mSzQ6hUBJMTIKKIuPEyMOrjzYIkGObkWI&s",
+                        "width": "250",
+                        "height": "200"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "og:image": "https://s21.q4cdn.com/399680738/files/design/2022/Meta_Symbol_PositivePrimary_RGB-(2).png",
+                        "viewport": "width=device-width, initial-scale=1",
+                        "twitter:image": "https://s21.q4cdn.com/399680738/files/design/2022/Meta_Symbol_PositivePrimary_RGB-(1).png"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://s21.q4cdn.com/399680738/files/design/2022/Meta_Symbol_PositivePrimary_RGB-(2).png"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "META: Meta Platforms Inc - Stock Price, Quote and News - CNBC",
+            "htmlTitle": "<b>META</b>: <b>Meta</b> Platforms Inc - <b>Stock Price</b>, <b>Quote</b> and News - CNBC",
+            "link": "https://www.cnbc.com/quotes/META",
+            "displayLink": "www.cnbc.com",
+            "snippet": "Meta Platforms, Inc. builds technology that helps people connect and share, find communities, and grow businesses.",
+            "htmlSnippet": "<b>Meta</b> Platforms, Inc. builds technology that helps people connect and share, find communities, and grow businesses.",
+            "formattedUrl": "https://www.cnbc.com/quotes/META",
+            "htmlFormattedUrl": "https://www.cnbc.com/quotes/<b>META</b>",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8yDyY8iN2yernwt68Bxa17m9huEqXDo-g6B-ADDNgPTfD4cXMYCk0fT37&s",
+                        "width": "310",
+                        "height": "163"
+                    }
+                ],
+                "newsmediaorganization": [
+                    {
+                        "foundingdate": "'1989-04-17'",
+                        "name": "CNBC",
+                        "url": "https://www.cnbc.com"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "og:image": "https://sc.cnbcfm.com/applications/cnbc.com/staticcontent/img/cnbc_logo_new.png?v=1524171804&w=1920&h=1080",
+                        "apple-itunes-app": "app-id=398018310",
+                        "og:type": "website",
+                        "twitter:card": "summary_large_image",
+                        "twitter:title": "Check out Meta Platforms's stock price (META) in real time",
+                        "og:site_name": "CNBC",
+                        "al:ios:app_name": "CNBC Business News and Finance",
+                        "twitter:url": "https://www.cnbc.com/quotes/META",
+                        "og:title": "Check out Meta Platforms's stock price (META) in real time",
+                        "title": "META: Meta Platforms Inc - Stock Price, Quote and News - CNBC",
+                        "twitter:creator": "@CNBC",
+                        "og:description": "Get Meta Platforms Inc (META:NASDAQ) real-time stock quotes, news, price and financial information from CNBC.",
+                        "parsely-metadata": "{\"nodeid\": \"101\",\"originalImage\": \"https://sc.cnbcfm.com/applications/cnbc.com/resources/img/editorial/2015/03/30/102546467-Most-Popular--Image-Placeholder-Large.jpg\"}",
+                        "twitter:image": "https://sc.cnbcfm.com/applications/cnbc.com/staticcontent/img/cnbc_logo_new.png?v=1524171804&w=1920&h=1080",
+                        "article:publisher": "https://www.facebook.com/CNBC",
+                        "article:author": "https://www.facebook.com/CNBC",
+                        "al:ios:app_store_id": "398018310",
+                        "twitter:image:src": "https://sc.cnbcfm.com/applications/cnbc.com/staticcontent/img/cnbc_logo_new.png?v=1524171804&w=1920&h=1080",
+                        "referrer": "unsafe-url",
+                        "parsely-type": "post",
+                        "twitter:site": "@CNBC",
+                        "viewport": "initial-scale=1.0, width=device-width",
+                        "og:url": "https://www.cnbc.com/quotes/META",
+                        "format-detection": "telephone=no"
+                    }
+                ],
+                "webpage": [
+                    {
+                        "image": "https://sc.cnbcfm.com/applications/cnbc.com/staticcontent/img/cnbc_logo_new.png?v=1524171804&w=1920&h=1080",
+                        "keywords": "Meta Platforms Inc, META, STOCK markets, CNBC",
+                        "name": "META: Meta Platforms Inc - Stock Price, Quote and News - CNBC",
+                        "description": "Get Meta Platforms Inc (META:NASDAQ) real-time stock quotes, news, price and financial information from CNBC.",
+                        "url": "https://www.cnbc.com/quotes/META"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://sc.cnbcfm.com/applications/cnbc.com/staticcontent/img/cnbc_logo_new.png?v=1524171804&w=1920&h=1080"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Product Pricing Guide",
+            "htmlTitle": "Product <b>Pricing</b> Guide",
+            "link": "https://www.metastock.com/products/pricingguide.aspx",
+            "displayLink": "www.metastock.com",
+            "snippet": "Whether an experienced trader or just starting out, there is a MetaStock software and market data package for you.",
+            "htmlSnippet": "Whether an experienced trader or just starting out, there is a <b>MetaStock</b> software and market data package for you.",
+            "formattedUrl": "https://www.metastock.com/products/pricingguide.aspx",
+            "htmlFormattedUrl": "https://www.<b>metastock</b>.com/products/pricingguide.aspx",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGp0MoG2HltatIDl0tMy5ZLa_y-TH3Gwb6KuF0C3VVvl3AM9A8lVrQ2A&s",
+                        "width": "298",
+                        "height": "99"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "viewport": "width=device-width,minimum-scale=1,initial-scale=1"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "x-raw-image:///7dfd42599cbde13043ed6b344f32424e14af9cba56cba38cc0b46c16a7f16d63"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Facebook-Parent Meta Stock Rises on Strong Earnings - Barron's",
+            "htmlTitle": "Facebook-Parent <b>Meta Stock</b> Rises on Strong Earnings - Barron&#39;s",
+            "link": "https://www.barrons.com/articles/facebook-instagram-meta-platforms-earnings-stock-price-2ea3d4e8",
+            "displayLink": "www.barrons.com",
+            "snippet": "18 hours ago ... While revenue jumped 22%, costs only increased 7% and headcount fell. So profit margins bulged. Operating profits widened from 29% in June 2023, ...",
+            "htmlSnippet": "18 hours ago <b>...</b> While revenue jumped 22%, <b>costs</b> only increased 7% and headcount fell. So profit margins bulged. Operating profits widened from 29% in June 2023,&nbsp;...",
+            "formattedUrl": "https://www.barrons.com/.../facebook-instagram-meta-platforms-earnings-st...",
+            "htmlFormattedUrl": "https://www.barrons.com/.../facebook-instagram-<b>meta</b>-platforms-earnings-<b>st</b>...",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUPe5XKILF0wXWJGEOboawmz5qOc3wMH3VjkoDLQ_LW4y6-QXTEEikDOyF&s",
+                        "width": "318",
+                        "height": "159"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "article.origheadline": "These Stocks Are Moving the Most Today: Meta, Arm, Qualcomm, Carvana, Teladoc, Apple, Amazon, and More",
+                        "article.publisher": "https://www.facebook.com/barrons",
+                        "og:image": "https://images.barrons.com/im-815552/social",
+                        "twitter:card": "summary_large_image",
+                        "og:image:width": "1280",
+                        "og:site_name": "barrons",
+                        "chosenadtarget": "section:Daily;type:Technology;id:WP-BAR-0001011720",
+                        "datelastpubbed": "2024-08-01T20:21:00Z",
+                        "article.access": "paid",
+                        "og:description": "Second-quarter earnings at Meta Platforms jump 73% and Moderna cuts full-year guidance, sinking the stock. Apple, Amazon.com, and Intel are scheduled to report earnings after the closing bell Thursday.",
+                        "next-head-count": "81",
+                        "twitter:image:alt": "These Stocks Moved the Most Today: Meta, Moderna, Qualcomm, Arm, Western Digital, Apple, Amazon, Intel, and More",
+                        "article.template": "full",
+                        "article.section": "Daily",
+                        "page.content.format": "responsive",
+                        "article:word_count": "567",
+                        "twitter:domain": "barrons.com",
+                        "article.created": "2024-08-01T08:45:00Z",
+                        "article:video_count": "0",
+                        "author": "Joe Woelfel and Connor Smith",
+                        "fb:pages": "8304333127",
+                        "msnbot": "noarchive,nocache",
+                        "og:locale": "en_US",
+                        "page.content.type": "Article",
+                        "article:image_count": "1",
+                        "article.id": "WP-BAR-0001011720",
+                        "article.page": "Daily",
+                        "twitter:image": "https://images.barrons.com/im-815552/social",
+                        "article.updated": "2024-08-01T20:21:00Z",
+                        "twitter:site": "@barrons",
+                        "page.section": "Article",
+                        "article.type.display": "Feature",
+                        "og:type": "article",
+                        "twitter:title": "Meta, Moderna, Qualcomm, Arm, Western Digital, Apple, Amazon, Intel, and More Market Movers",
+                        "article.summary": "Second-quarter earnings at Meta Platforms jump 73% and Moderna cuts full-year guidance, sinking the stock. Apple, Amazon.com, and Intel are scheduled to report earnings after the closing bell Thursday.",
+                        "og:title": "Meta, Moderna, Qualcomm, Arm, Western Digital, Apple, Amazon, Intel, and More Market Movers",
+                        "og:image:height": "640",
+                        "page.content.source": "Barrons Online",
+                        "fb:app_id": "368513495882",
+                        "article.published": "2024-08-01T08:45:00Z",
+                        "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0",
+                        "user.exp": "google_bot",
+                        "twitter:description": "Second-quarter earnings at Meta Platforms jump 73% and Moderna cuts full-year guidance, sinking the stock. Apple, Amazon.com, and Intel are scheduled to report earnings after the closing bell Thursday.",
+                        "user.type": "nonsubscriber",
+                        "article.headline": "These Stocks Moved the Most Today: Meta, Moderna, Qualcomm, Arm, Western Digital, Apple, Amazon, Intel, and More",
+                        "branch:deeplink:target": "app",
+                        "og:url": "https://www.barrons.com/articles/stock-market-movers-2eaa851c",
+                        "google-signin-client_id": "61387583289.apps.googleusercontent.com",
+                        "article.type": "Feature"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://images.barrons.com/im-815552/social"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Meta Platforms, Inc. Class A Common Stock (META) Stock Price ...",
+            "htmlTitle": "Meta Platforms, Inc. Class A Common Stock (<b>META</b>) <b>Stock Price</b> ...",
+            "link": "https://www.nasdaq.com/market-activity/stocks/meta",
+            "displayLink": "www.nasdaq.com",
+            "snippet": "Discover real-time Meta Platforms, Inc. Class A Common Stock (META) stock prices, quotes, historical data, news, and Insights for informed trading and ...",
+            "htmlSnippet": "Discover real-time Meta Platforms, Inc. Class A Common Stock (<b>META</b>) <b>stock prices</b>, quotes, historical data, news, and Insights for informed trading and&nbsp;...",
+            "formattedUrl": "https://www.nasdaq.com/market-activity/stocks/meta",
+            "htmlFormattedUrl": "https://www.nasdaq.com/market-activity/<b>stock</b>s/<b>meta</b>",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw7eKkPV4h6lk3I2vf7tXi3-VFwh4SbqYP69ip2qY8j3ukagJ2pawa52XN&s",
+                        "width": "259",
+                        "height": "194"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "msapplication-tilecolor": "#da532c",
+                        "twitter:card": "summary_large_image",
+                        "theme-color": "#ffffff",
+                        "handheldfriendly": "true",
+                        "com.nasdaq.cms.taxonomy.pagetype": "symbol-page",
+                        "og:title": "META",
+                        "title": "Meta Platforms, Inc. Class A Common Stock (META) Stock Price, News, Quotes, & Historic Data | Nasdaq",
+                        "com.nasdaq.cms.taxonomy.quotesymbol": "META",
+                        "com.nasdaq.cms.taxonomy.assetclass": "stocks",
+                        "twitter:site": "@Nasdaq",
+                        "viewport": "width=device-width, initial-scale=1.0",
+                        "mobileoptimized": "width",
+                        "og:url": "https://www.nasdaq.com/market-activity/stocks/meta"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://www.nasdaq.com/sites/acquia.prod/files/barchart/NYSE%2520Full%2520View.jpg"
+                    }
+                ],
+                "sitenavigationelement": [
+                    {
+                        "name": "Market Activity Market Activity -> Stocks Options ETFs Mutual Funds Indexes Commodities Cryptocurrency Currencies Futures Fixed Income Global Markets Market Regulation -> U.S. Regulation European...",
+                        "url": "See All Market Activity ->"
+                    },
+                    {
+                        "name": "Market Activity -> Stocks Options ETFs Mutual Funds Indexes Commodities Cryptocurrency Currencies Futures Fixed Income Global Markets Market Regulation -> U.S. Regulation European Regulation",
+                        "url": "Market Activity ->"
+                    },
+                    {
+                        "name": "Stocks",
+                        "url": "Stocks"
+                    },
+                    {
+                        "name": "U.S. Regulation",
+                        "url": "U.S. Regulation"
+                    },
+                    {
+                        "name": "Real-Time Quotes",
+                        "url": "Real-Time Quotes"
+                    },
+                    {
+                        "name": "Economic Calendar",
+                        "url": "Economic Calendar"
+                    },
+                    {
+                        "name": "Analyst Recommendations",
+                        "url": "Analyst Recommendations"
+                    },
+                    {
+                        "name": "Gold",
+                        "url": "Gold"
+                    },
+                    {
+                        "name": "Statistical Milestones",
+                        "url": "Statistical Milestones"
+                    },
+                    {
+                        "name": "News and Insights -> Markets -> Companies -> Cryptocurrency -> Technology -> Personal Finance ->"
+                    },
+                    {
+                        "name": "News and Insights ->",
+                        "url": "News and Insights ->"
+                    },
+                    {
+                        "name": "Stocks",
+                        "url": "Stocks"
+                    },
+                    {
+                        "name": "World Reimagined",
+                        "url": "World Reimagined"
+                    },
+                    {
+                        "name": "Access Global Markets -> Public Markets (Listings) North American Markets European Markets Private Markets Nasdaq Fund Secondaries Featured Solutions Nasdaq's IPO Process ETF Listings Nasdaq-100...",
+                        "url": "Access Global Markets ->"
+                    },
+                    {
+                        "name": "Public Markets (Listings)",
+                        "url": "Public Markets (Listings)"
+                    },
+                    {
+                        "name": "Nasdaq's IPO Process",
+                        "url": "Nasdaq's IPO Process"
+                    },
+                    {
+                        "name": "Investment Intelligence",
+                        "url": "Investment Intelligence"
+                    },
+                    {
+                        "name": "Nasdaq Data Link",
+                        "url": "Nasdaq Data Link"
+                    },
+                    {
+                        "name": "Financial Technology",
+                        "url": "Financial Technology"
+                    },
+                    {
+                        "name": "Nasdaq Trade Surveillance",
+                        "url": "Nasdaq Trade Surveillance"
+                    },
+                    {
+                        "name": "Governance Solutions",
+                        "url": "Governance Solutions"
+                    },
+                    {
+                        "name": "Nasdaq Boardvantage®",
+                        "url": "Nasdaq Boardvantage®"
+                    },
+                    {
+                        "name": "Our People -> Board of Directors -> Careers -> Nasdaq Newsroom -> Contact ->"
+                    },
+                    {
+                        "name": "Our People ->",
+                        "url": "Our People ->"
+                    },
+                    {
+                        "name": "Nasdaq MarketSite",
+                        "url": "Nasdaq MarketSite"
+                    },
+                    {
+                        "name": "Purpose",
+                        "url": "Purpose"
+                    },
+                    {
+                        "name": "About Nasdaq+ -> Dashboard -> Weekly Macro+ ->"
+                    },
+                    {
+                        "name": "About Nasdaq+ ->",
+                        "url": "About Nasdaq+ ->"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Meta Platforms, Inc. (META) stock price, news, quote & history ...",
+            "htmlTitle": "Meta Platforms, Inc. (<b>META</b>) <b>stock price</b>, news, quote &amp; history ...",
+            "link": "https://uk.finance.yahoo.com/quote/META/",
+            "displayLink": "uk.finance.yahoo.com",
+            "snippet": "Meta Platforms Second Quarter 2024 Earnings: Beats Expectations. Meta Platforms ( NASDAQ:META ) Second Quarter 2024 Results Key Financial Results Revenue: US ...",
+            "htmlSnippet": "<b>Meta</b> Platforms Second Quarter 2024 Earnings: Beats Expectations. <b>Meta</b> Platforms ( NASDAQ:<b>META</b> ) Second Quarter 2024 Results Key Financial Results Revenue: US&nbsp;...",
+            "formattedUrl": "https://uk.finance.yahoo.com/quote/META/",
+            "htmlFormattedUrl": "https://uk.finance.yahoo.com/quote/<b>META</b>/",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoCgoe2XIWK1wvQQnCXpvwGieiET3EZ89hNdiU356o8MB7kfJHy8vE4EBf&s",
+                        "width": "225",
+                        "height": "225"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "og:image": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png",
+                        "apple-itunes-app": "app-id=328412701, app-clip-bundle-id=com.yahoo.finance.clip-qsp, affiliate-data=ct=us.fin.mbl.smart-banner&pt=9029, app-argument=https://yfinance.onelink.me/3068494570?pid=SmartBanner&c=US_Acquisition_YMktg_337__&af_sub1=Acquisition&af_sub2=US_YMktg&af_sub3=&af_sub4=100000591&af_sub5=YahooFinanceApp__SmartBanner_",
+                        "theme-color": "#400090",
+                        "twitter:title": "Meta Platforms, Inc. (META) stock price, news, quote & history – Yahoo Finance",
+                        "al:ios:app_name": "Yahoo Finance",
+                        "msvalidate.01": "A9862C0E6E1BE95BCE0BF3D0298FD58B",
+                        "og:title": "Meta Platforms, Inc. (META) stock price, news, quote & history – Yahoo Finance",
+                        "al:android:package": "com.yahoo.mobile.client.android.finance",
+                        "fb:pages": "115060728528067",
+                        "og:description": "Find the latest Meta Platforms, Inc. (META) stock quote, history, news and other vital information to help you with your stock trading and investing.",
+                        "twitter:dnt": "on",
+                        "al:ios:app_store_id": "328412701",
+                        "al:android:url": "intent://quote/META/#Intent;scheme=yfinance;action=android.intent.action.VIEW;package=com.yahoo.mobile.client.android.finance;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.yahoo.mobile.client.android.finance;end",
+                        "fb:app_id": "115060728528067",
+                        "oath:guce:consent-host": "guce.yahoo.com",
+                        "twitter:site": "@YahooFinanceUK",
+                        "viewport": "width=device-width, initial-scale=1",
+                        "twitter:description": "Find the latest Meta Platforms, Inc. (META) stock quote, history, news and other vital information to help you with your stock trading and investing.",
+                        "og:url": "https://uk.finance.yahoo.com/quote/META/",
+                        "al:android:app_name": "Yahoo Finance"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Meta Platforms Inc (META) Stock Price & News - Google Finance",
+            "htmlTitle": "Meta Platforms Inc (<b>META</b>) <b>Stock Price</b> &amp; News - Google Finance",
+            "link": "https://www.google.com/finance/quote/META:NASDAQ?hl=en",
+            "displayLink": "www.google.com",
+            "snippet": "Previous close. The last closing price. $497.74 ; Day range. The range between the high and low prices over the past day. $476.15 - $501.15 ; Year range. The ...",
+            "htmlSnippet": "Previous close. The last closing <b>price</b>. $497.74 ; Day range. The range between the high and low <b>prices</b> over the past day. $476.15 - $501.15 ; Year range. The&nbsp;...",
+            "formattedUrl": "https://www.google.com/finance/quote/META:NASDAQ?hl=en",
+            "htmlFormattedUrl": "https://www.google.com/finance/quote/<b>META</b>:NASDAQ?hl=en",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQldTHAz14MiWY-2bpICyONYLUjcoY7hJc8AQj1tmfmhHDQ43UNmSVu_8&s",
+                        "width": "311",
+                        "height": "162"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "application-name": "Google Finance",
+                        "og:image": "https://ssl.gstatic.com/finance/favicon/finance_770x402.png",
+                        "theme-color": "#ffffff",
+                        "og:type": "website",
+                        "og:image:width": "770",
+                        "twitter:card": "summary",
+                        "twitter:title": "Meta Platforms Inc (META) Stock Price & News - Google Finance",
+                        "og:site_name": "Google Finance",
+                        "apple-mobile-web-app-title": "Google Finance",
+                        "og:title": "Meta Platforms Inc (META) Stock Price & News - Google Finance",
+                        "og:image:height": "402",
+                        "og:description": "Get the latest Meta Platforms Inc (META) real-time quote, historical performance, charts, and other financial information to help you make more informed trading and investment decisions.",
+                        "twitter:image": "https://ssl.gstatic.com/finance/favicon/finance_496x496.png",
+                        "referrer": "origin",
+                        "apple-mobile-web-app-status-bar-style": "default",
+                        "msapplication-tap-highlight": "no",
+                        "twitter:site": "@google",
+                        "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui",
+                        "apple-mobile-web-app-capable": "yes",
+                        "twitter:description": "Get the latest Meta Platforms Inc (META) real-time quote, historical performance, charts, and other financial information to help you make more informed trading and investment decisions.",
+                        "mobile-web-app-capable": "yes",
+                        "og:url": "https://www.google.com/finance/quote/META:NASDAQ"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://ssl.gstatic.com/finance/favicon/finance_770x402.png"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Meta Stock Jumps As Facebook Parent Unpacks AI Strategy",
+            "htmlTitle": "<b>Meta Stock</b> Jumps As Facebook Parent Unpacks AI Strategy",
+            "link": "https://www.investors.com/news/technology/meta-stock-facebook-q2-earnings-instagram/",
+            "displayLink": "www.investors.com",
+            "snippet": "2 days ago ... The company did not release estimates for 2025 capex costs. But Chief Financial Officer Susan Li said the company expects \"significant capital ...",
+            "htmlSnippet": "2 days ago <b>...</b> The company did not release estimates for 2025 capex <b>costs</b>. But Chief Financial Officer Susan Li said the company expects &quot;significant capital&nbsp;...",
+            "formattedUrl": "https://www.investors.com/.../meta-stock-facebook-q2-earnings-instagram/",
+            "htmlFormattedUrl": "https://www.investors.com/.../<b>meta</b>-<b>stock</b>-facebook-q2-earnings-instagram/",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGTRpUEo_JtJQryDCrNz00ZK69Dkrd8DsPRxrLDhmBwSJdvTDLY9oGYjA&s",
+                        "width": "299",
+                        "height": "168"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "og:image": "https://www.investors.com/wp-content/uploads/2024/02/Stock-Meta-Zuckerberg-03-shutt.jpg",
+                        "apple-itunes-app": "app-id=1132274579",
+                        "article:published_time": "2024-08-01T12:55:15+00:00",
+                        "og:image:width": "1000",
+                        "twitter:card": "summary_large_image",
+                        "og:site_name": "Investor's Business Daily",
+                        "twitter:label1": "Written by",
+                        "twitter:label2": "Est. reading time",
+                        "parsely-author": "RYAN DEFFENBAUGH",
+                        "msapplication-tileimage": "https://www.investors.com/wp-content/uploads/2023/10/ibd-favicon-20231010.png",
+                        "og:description": "Meta stock rallied after the tech giant posted second-quarter results that exceeded Wall Street's expectations.",
+                        "twitter:creator": "@IBDinvestors",
+                        "parsely-metadata": "{\"post_id\": \"9297129\", \"allesseh_post_id\": \"IBDF-9297129\"}",
+                        "article:publisher": "https://www.facebook.com/investorsbusinessdaily/",
+                        "twitter:data1": "RYAN DEFFENBAUGH",
+                        "twitter:data2": "5 minutes",
+                        "parsely-type": "post",
+                        "twitter:site": "@IBDinvestors",
+                        "article:modified_time": "2024-08-01T12:55:49+00:00",
+                        "parsely-link": "http://www.investors.com/news/technology/meta-stock-facebook-q2-earnings-instagram/",
+                        "parsely-image-url": "https://www.investors.com/wp-content/uploads/2024/02/Stock-Meta-Zuckerberg-03-shutt-640x360.jpg",
+                        "parsely-section": "Technology",
+                        "tag": "All News And Stock Ideas|FANG Stocks: Facebook Amazon Netflix Google|Magnificent Seven Stocks|Meta Stock News|Tech Earnings",
+                        "og:type": "article",
+                        "author": "Investor's Business Daily",
+                        "og:title": "Meta Stock Jumps As Facebook Parent Unpacks AI Strategy",
+                        "og:image:height": "563",
+                        "parsely-title": "Meta Stock Jumps As Facebook Parent Unpacks AI Strategy",
+                        "parsely-pub-date": "2024-08-01T12:55:15Z",
+                        "parsely-tags": "all news and stock ideas,fang stocks: facebook amazon netflix google,magnificent seven stocks,meta stock news,tech earnings",
+                        "uac-config": "{\"breakpoints\":{\"at4units\":0,\"at8units\":320,\"at12units\":1024}}",
+                        "viewport": "width=device-width, initial-scale=1",
+                        "og:locale": "en_US",
+                        "og:url": "https://www.investors.com/news/technology/meta-stock-facebook-q2-earnings-instagram/",
+                        "google-play-app": "app-id=com.investors.business.daily"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://www.investors.com/wp-content/uploads/2024/02/Stock-Meta-Zuckerberg-03-shutt.jpg"
+                    }
+                ]
+            }
+        }
+    ]
+}

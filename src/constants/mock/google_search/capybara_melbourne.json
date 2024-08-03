@@ -1,0 +1,530 @@
+{
+    "kind": "customsearch#search",
+    "url": {
+        "type": "application/json",
+        "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+    },
+    "queries": {
+        "request": [
+            {
+                "title": "Google Custom Search - capybara melbourne",
+                "totalResults": "376000",
+                "searchTerms": "capybara melbourne",
+                "count": 10,
+                "startIndex": 1,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "37af15c1ae400405b"
+            }
+        ],
+        "nextPage": [
+            {
+                "title": "Google Custom Search - capybara melbourne",
+                "totalResults": "376000",
+                "searchTerms": "capybara melbourne",
+                "count": 10,
+                "startIndex": 11,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "37af15c1ae400405b"
+            }
+        ]
+    },
+    "context": {
+        "title": "googlexity"
+    },
+    "searchInformation": {
+        "searchTime": 0.191653,
+        "formattedSearchTime": "0.19",
+        "totalResults": "376000",
+        "formattedTotalResults": "376,000"
+    },
+    "items": [
+        {
+            "kind": "customsearch#result",
+            "title": "Capybara Encounter | Currumbin Wildlife Sanctuary",
+            "htmlTitle": "<b>Capybara</b> Encounter | Currumbin Wildlife Sanctuary",
+            "link": "https://currumbinsanctuary.com.au/what-to-see-and-do/encounters/Capybara-Encounter",
+            "displayLink": "currumbinsanctuary.com.au",
+            "snippet": "Enter the Capybaras enclosure and get up close and personal with the world's largest rodent!",
+            "htmlSnippet": "Enter the <b>Capybaras</b> enclosure and get up close and personal with the world&#39;s largest rodent!",
+            "formattedUrl": "https://currumbinsanctuary.com.au/what-to-see-and.../Capybara-Encounter",
+            "htmlFormattedUrl": "https://currumbinsanctuary.com.au/what-to-see-and.../<b>Capybara</b>-Encounter",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoexORn1lYkKJtmk2SRNpuFep1XQVpWwFeRa-roSqeSbidTTpHv9d7Eyud&s",
+                        "width": "259",
+                        "height": "194"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "viewport": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
+                        "msapplication-tileimage": "https://currumbinsanctuary.com.au/application/files/2215/0716/7747/fav-cws-144.png",
+                        "facebook-domain-verification": "vv2sqdfgciwyzcotoq2b9dbyf78h51"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://currumbinsanctuary.com.au/application/files/1615/3680/2334/Currumbin_Wildlife_Sanctuary_Capybara_Encounter_Mobile_1024x768.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Zoos in Australia with Capybaras | capybaraworld",
+            "htmlTitle": "Zoos in Australia with <b>Capybaras</b> | capybaraworld",
+            "link": "https://capybaraworld.wordpress.com/2023/05/14/zoos-in-australia-with-capybaras/",
+            "displayLink": "capybaraworld.wordpress.com",
+            "snippet": "May 14, 2023 ... The zoos which do have capybaras all offer a “Capybara ... Check it out capylovers – there were capybaras in Melbourne in March according to this ...",
+            "htmlSnippet": "May 14, 2023 <b>...</b> The zoos which do have <b>capybaras</b> all offer a “<b>Capybara</b> ... Check it out capylovers – there were <b>capybaras</b> in <b>Melbourne</b> in March according to this&nbsp;...",
+            "formattedUrl": "https://capybaraworld.wordpress.com/.../zoos-in-australia-with-capybaras/",
+            "htmlFormattedUrl": "https://<b>capybara</b>world.wordpress.com/.../zoos-in-australia-with-<b>capybara</b>s/",
+            "pagemap": {
+                "hcard": [
+                    {
+                        "fn": "marti@oakmoor-recruitment.co.uk"
+                    },
+                    {
+                        "url_text": "capybaraworld",
+                        "fn": "capybaraworld",
+                        "nickname": "capybaraworld",
+                        "url": "https://capybaraworld.wordpress.com/"
+                    },
+                    {
+                        "fn": "Natalie",
+                        "nickname": "Natalie"
+                    },
+                    {
+                        "url_text": "capybaraworld",
+                        "fn": "capybaraworld",
+                        "nickname": "capybaraworld",
+                        "url": "https://capybaraworld.wordpress.com/"
+                    },
+                    {
+                        "fn": "Natalie Thomas"
+                    },
+                    {
+                        "url_text": "capybaraworld",
+                        "fn": "capybaraworld",
+                        "nickname": "capybaraworld",
+                        "url": "https://capybaraworld.wordpress.com/"
+                    },
+                    {
+                        "fn": "Norah",
+                        "nickname": "Norah"
+                    },
+                    {
+                        "url_text": "capybaraworld",
+                        "fn": "capybaraworld",
+                        "nickname": "capybaraworld",
+                        "url": "https://capybaraworld.wordpress.com/"
+                    },
+                    {
+                        "fn": "jdovey78"
+                    },
+                    {
+                        "url_text": "capybaraworld",
+                        "fn": "capybaraworld",
+                        "nickname": "capybaraworld",
+                        "url": "https://capybaraworld.wordpress.com/"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHsUfVxDG3D4vwSW75Nree5blDZB6u5j3OFPSXuqaeGJuZenr0n6kA1Vg&s",
+                        "width": "299",
+                        "height": "168"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "application-name": "capybaraworld",
+                        "og:image": "https://capybaraworld.wordpress.com/wp-content/uploads/2023/05/nwn-ryosuke-marc-pets-24-jul-2019-077.jpg",
+                        "og:type": "article",
+                        "article:published_time": "2023-05-14T17:04:47+00:00",
+                        "og:image:width": "999",
+                        "twitter:card": "summary_large_image",
+                        "og:site_name": "capybaraworld",
+                        "msapplication-window": "width=device-width;height=device-height",
+                        "msapplication-tooltip": "Capybara - Facts, Information and Everything You Wanted to Know About These Exceptional Animals",
+                        "og:title": "Zoos in Australia with Capybaras",
+                        "og:image:height": "562",
+                        "msapplication-tileimage": "https://capybaraworld.wordpress.com/wp-content/uploads/2020/06/wp-1591174214107.jpg?w=270",
+                        "og:description": "My book will be a joy for anyone who loves capybaras and wants to learn more about them: “My Life with Capybaras. What Capybaras Have Taught Me”, as an e-book and as 3 separate paperbac…",
+                        "article:publisher": "https://www.facebook.com/WordPresscom",
+                        "twitter:image": "https://capybaraworld.wordpress.com/wp-content/uploads/2023/05/nwn-ryosuke-marc-pets-24-jul-2019-077.jpg?w=640",
+                        "twitter:text:title": "Zoos in Australia with Capybaras",
+                        "fb:app_id": "249643311490",
+                        "article:modified_time": "2024-03-22T08:35:46+00:00",
+                        "viewport": "width=device-width",
+                        "og:locale": "en_US",
+                        "og:url": "https://capybaraworld.wordpress.com/2023/05/14/zoos-in-australia-with-capybaras/"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://capybaraworld.wordpress.com/wp-content/uploads/2023/05/nwn-ryosuke-marc-pets-24-jul-2019-077.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Capybara Cafe in Melbourne | TikTok",
+            "htmlTitle": "<b>Capybara</b> Cafe in <b>Melbourne</b> | TikTok",
+            "link": "https://www.tiktok.com/discover/capybara-cafe-in-melbourne?lang=en",
+            "displayLink": "www.tiktok.com",
+            "snippet": "5 days ago ... 54.9M posts. Discover videos related to Capybara Cafe in Melbourne on TikTok. See more videos about Aesthetic Cafe in Melbourne, ...",
+            "htmlSnippet": "5 days ago <b>...</b> 54.9M posts. Discover videos related to <b>Capybara</b> Cafe in <b>Melbourne</b> on TikTok. See more videos about Aesthetic Cafe in <b>Melbourne</b>,&nbsp;...",
+            "formattedUrl": "https://www.tiktok.com/discover/capybara-cafe-in-melbourne?lang=en",
+            "htmlFormattedUrl": "https://www.tiktok.com/discover/<b>capybara</b>-cafe-in-<b>melbourne</b>?lang=en",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1UHF9WP6BXc-NJ9vf2ju0vxMTa3b4n1nGbix3Ccz72bBGO3uxVVNsu8Q&s",
+                        "width": "168",
+                        "height": "300"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "twitter:app:id:googleplay": "com.zhiliaoapp.musically",
+                        "og:image": "https://p16-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/91446ca3c4ce4985a8680c067a7b7880_1697535663~tplv-photomode-share-play.jpeg?lk3s=b59d6b55&nonce=87819&refresh_token=0faa0002809ab2e15c1df405b5519ced&x-expires=1723215600&x-signature=Oviy1ymXKfCdOrJ7j%2FwXOWXnfsI%3D&shp=b59d6b55&shcp=-",
+                        "twitter:card": "summary",
+                        "og:image:width": "360",
+                        "og:site_name": "TikTok",
+                        "applicable-device": "pc, mobile",
+                        "al:android:package": "com.zhiliaoapp.musically",
+                        "pumbaa-ctx": "login=0,ftc=0",
+                        "al:ios:url": "snssdk1233://user/profile/",
+                        "twitter:app:id:iphone": "835599320",
+                        "og:description": "54.9M posts. Discover videos related to Capybara Cafe in Melbourne on TikTok. See more videos about Aesthetic Cafe in Melbourne, Malbourne Cafes, Ninteys Cafe Melbourne, Serotonin Cafe Melbourne, Butter Cafe Melbourne, Capybara Cafe Seattle.",
+                        "al:ios:app_store_id": "835599320",
+                        "twitter:image": "https://p16-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/91446ca3c4ce4985a8680c067a7b7880_1697535663~tplv-photomode-share-play.jpeg?lk3s=b59d6b55&nonce=87819&refresh_token=0faa0002809ab2e15c1df405b5519ced&x-expires=1723215600&x-signature=Oviy1ymXKfCdOrJ7j%2FwXOWXnfsI%3D&shp=b59d6b55&shcp=-",
+                        "twitter:site": "TikTok",
+                        "og:type": "website",
+                        "twitter:title": "Capybara Cafe in Melbourne | TikTok",
+                        "og:image:alt": "Capybara Cafe in Melbourne | TikTok",
+                        "al:ios:app_name": "musical.ly",
+                        "og:title": "Capybara Cafe in Melbourne | TikTok",
+                        "og:image:height": "360",
+                        "google": "notranslate",
+                        "al:android:url": "snssdk1233://user/profile/",
+                        "fb:app_id": "597615686992125",
+                        "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no",
+                        "twitter:description": "54.9M posts. Discover videos related to Capybara Cafe in Melbourne on TikTok. See more videos about Aesthetic Cafe in Melbourne, Malbourne Cafes, Ninteys Cafe Melbourne, Serotonin Cafe Melbourne, Butter Cafe Melbourne, Capybara Cafe Seattle.",
+                        "og:url": "https://www.tiktok.com/discover/capybara-cafe-in-melbourne",
+                        "al:android:app_name": "musical.ly",
+                        "format-detection": "telephone=no"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://www.tiktok.com/api/img/?itemId=7326883098740755720&location=0&aid=1988"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Melbourne Food & Lifestyle | CAPYBARA CAFE I didn't understand ...",
+            "htmlTitle": "<b>Melbourne</b> Food &amp; Lifestyle | <b>CAPYBARA</b> CAFE I didn&#39;t understand ...",
+            "link": "https://www.instagram.com/p/C86eZYJPgwT/",
+            "displayLink": "www.instagram.com",
+            "snippet": "Jul 2, 2024 ... Post · CAPYBARA CAFE · Trying Melbourne's newest BINGSU / KAKIGORI dessert cafe · Have you tried the #tiramisu from @grillamericano yet ??",
+            "htmlSnippet": "Jul 2, 2024 <b>...</b> Post &middot; <b>CAPYBARA</b> CAFE &middot; Trying <b>Melbourne&#39;s</b> newest BINGSU / KAKIGORI dessert cafe &middot; Have you tried the #tiramisu from @grillamericano yet ??",
+            "formattedUrl": "https://www.instagram.com/p/C86eZYJPgwT/",
+            "htmlFormattedUrl": "https://www.instagram.com/p/C86eZYJPgwT/",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR8lg6qAcO1_ddJzf00q7tHlxMthmrx2ZO0GfNPujz93QaFtaBfUB353si&s",
+                        "width": "168",
+                        "height": "300"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "og:image": "https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/449696265_1221983398744968_9007834475293834218_n.jpg?stp=cmp1_dst-jpg_s640x640&_nc_cat=111&ccb=1-7&_nc_sid=18de74&_nc_ohc=gsQsojmV4zUQ7kNvgEWgrAP&_nc_ht=scontent-atl3-2.cdninstagram.com&gid=AK4yxgH-QvvYocFTSlBG3wR&oh=00_AYAmTYo2LId_xhneojzS6CqWkbMYOC1VAMCx4xVFU1fw-g&oe=66AF3927",
+                        "theme-color": "#FFFFFF",
+                        "twitter:card": "summary_large_image",
+                        "og:site_name": "Instagram",
+                        "al:android:package": "com.instagram.android",
+                        "bingbot": "noarchive",
+                        "medium": "image",
+                        "al:ios:url": "instagram://media?id=3403166153738947603",
+                        "og:description": "76K likes, 145 comments - foodie_or_fatty on July 2, 2024: \"CAPYBARA CAFE 😍 \n\nI didn’t understand why everyone was suddenly obsessed with Capybaras and after going to one I am now obsessed 😂\n\n📍 Capybara Coffee, Chongqing \n\n#capybara #capaybaracoffee #coffeeshop #chongqing #capybaras #capybaralove #animalcafe #chinatravel #chinareels #china #douyinchina #chongqingcity #chongqinginsta\".",
+                        "twitter:image": "https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/449696265_1221983398744968_9007834475293834218_n.jpg?stp=cmp1_dst-jpg_s640x640&_nc_cat=111&ccb=1-7&_nc_sid=18de74&_nc_ohc=gsQsojmV4zUQ7kNvgEWgrAP&_nc_ht=scontent-atl3-2.cdninstagram.com&gid=AK4yxgH-QvvYocFTSlBG3wR&oh=00_AYAmTYo2LId_xhneojzS6CqWkbMYOC1VAMCx4xVFU1fw-g&oe=66AF3927",
+                        "al:ios:app_store_id": "389801252",
+                        "twitter:site": "@instagram",
+                        "instapp:owner_user_id": "1569697924",
+                        "og:type": "article",
+                        "twitter:title": "Melbourne Food & Lifestyle 👸🏻 (@foodie_or_fatty) • Instagram reel",
+                        "al:ios:app_name": "Instagram",
+                        "og:title": "Melbourne Food & Lifestyle 👸🏻 on Instagram: \"CAPYBARA CAFE 😍 \n\nI didn’t understand why everyone was suddenly obsessed with Capybaras and after going to one I am now obsessed 😂\n\n📍 Capybara Coffee, Chongqing \n\n#capybara #capaybaracoffee #coffeeshop #chongqing #capybaras #capybaralove #animalcafe #chinatravel #chinareels #china #douyinchina #chongqingcity #chongqinginsta\"",
+                        "twitter:maxage": "86400",
+                        "color-scheme": "light",
+                        "al:android:url": "https://www.instagram.com/p/C86eZYJPgwT/",
+                        "fb:app_id": "124024574287414",
+                        "apple-mobile-web-app-status-bar-style": "default",
+                        "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
+                        "mobile-web-app-capable": "yes",
+                        "og:url": "https://www.instagram.com/reel/C86eZYJPgwT/",
+                        "al:android:app_name": "Instagram"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3403166153738947603"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Melbourne Zoo News 2023 [Melbourne Zoo] - Page 19 - ZooChat",
+            "htmlTitle": "<b>Melbourne</b> Zoo News 2023 [<b>Melbourne</b> Zoo] - Page 19 - ZooChat",
+            "link": "https://www.zoochat.com/community/threads/melbourne-zoo-news-2023.486308/page-19",
+            "displayLink": "www.zoochat.com",
+            "snippet": "Jan 2, 2023 ... How many zoos have capybara right now? And where are they breeding? Twelve facilities - Altina; Crocodylus; Currumbin; D'Aguilar Wildlife; ...",
+            "htmlSnippet": "Jan 2, 2023 <b>...</b> How many zoos have <b>capybara</b> right now? And where are they breeding? Twelve facilities - Altina; Crocodylus; Currumbin; D&#39;Aguilar Wildlife;&nbsp;...",
+            "formattedUrl": "https://www.zoochat.com/community/threads/melbourne-zoo.../page-19",
+            "htmlFormattedUrl": "https://www.zoochat.com/community/threads/<b>melbourne</b>-zoo.../page-19",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdSu5avyCJ8j-b9mtjV22WSOzABSQym7XLdW2R5wYvSRuCwL4zHbne&s",
+                        "width": "96",
+                        "height": "96"
+                    }
+                ],
+                "breadcrumb": [
+                    {
+                        "title": "Forums",
+                        "url": "Forums"
+                    },
+                    {
+                        "title": "Oceania",
+                        "url": "Oceania"
+                    },
+                    {
+                        "title": "Australia",
+                        "url": "Australia"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "referrer": "origin",
+                        "og:image": "https://www.zoochat.com/community/data/avatars/m/15/15276.jpg?1720349989",
+                        "theme-color": "#006633",
+                        "og:type": "article",
+                        "og:site_name": "ZooChat",
+                        "viewport": "width=device-width, initial-scale=1",
+                        "og:title": "Melbourne Zoo News 2023 [Melbourne Zoo]",
+                        "og:url": "https://www.zoochat.com/community/threads/melbourne-zoo-news-2023.486308/",
+                        "og:description": "How many zoos have capybara right now? And where are they breeding?\nTwelve facilities - Altina; Crocodylus; Currumbin; D'Aguilar Wildlife; Darling..."
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://www.zoochat.com/community/data/avatars/m/15/15276.jpg?1720349989"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Animals and habitats of Melbourne Zoo | Zoos Victoria",
+            "htmlTitle": "Animals and habitats of <b>Melbourne</b> Zoo | Zoos Victoria",
+            "link": "https://www.zoo.org.au/melbourne/animals-and-habitats/",
+            "displayLink": "www.zoo.org.au",
+            "snippet": "Discover the different trails of the Zoo and where to find your favourite animals. Learn more.",
+            "htmlSnippet": "Discover the different trails of the Zoo and where to find your favourite animals. Learn more.",
+            "formattedUrl": "https://www.zoo.org.au/melbourne/animals-and-habitats/",
+            "htmlFormattedUrl": "https://www.zoo.org.au/<b>melbourne</b>/animals-and-habitats/",
+            "pagemap": {
+                "metatags": [
+                    {
+                        "msapplication-tilecolor": "#236529",
+                        "msapplication-config": "/favicon/browserconfig.xml",
+                        "theme-color": "#ffffff",
+                        "viewport": "width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no",
+                        "og:title": "Animals and habitats of Melbourne Zoo | Zoos Victoria",
+                        "og:url": "https://www.zoo.org.au/melbourne/animals-and-habitats/",
+                        "og:description": "Discover the different trails of the Zoo and where to find your favourite animals. Learn more.",
+                        "facebook-domain-verification": "6ljew55fbo89gl68oew48hb4b6spnf",
+                        "format-detection": "telephone=no"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "How do I meet a capybara in Australia? : r/NoStupidQuestions",
+            "htmlTitle": "How do I meet a <b>capybara</b> in Australia? : r/NoStupidQuestions",
+            "link": "https://www.reddit.com/r/NoStupidQuestions/comments/10hpzil/how_do_i_meet_a_capybara_in_australia/",
+            "displayLink": "www.reddit.com",
+            "snippet": "Jan 21, 2023 ... I recently visited Sydney and went to Taronga Zoo with the intention of getting a capybara ... r/melbourne · Anyone travel with pet to Australia ...",
+            "htmlSnippet": "Jan 21, 2023 <b>...</b> I recently visited Sydney and went to Taronga Zoo with the intention of getting a <b>capybara</b> ... r/<b>melbourne</b> &middot; Anyone travel with pet to Australia&nbsp;...",
+            "formattedUrl": "https://www.reddit.com/r/.../how_do_i_meet_a_capybara_in_australia/",
+            "htmlFormattedUrl": "https://www.reddit.com/r/.../how_do_i_meet_a_<b>capybara</b>_in_australia/",
+            "pagemap": {
+                "metatags": [
+                    {
+                        "og:image": "https://share.redd.it/preview/post/10hpzil",
+                        "theme-color": "#000000",
+                        "og:image:width": "1200",
+                        "og:type": "website",
+                        "og:image:alt": "An image containing a preview of the post",
+                        "twitter:card": "summary_large_image",
+                        "twitter:title": "r/NoStupidQuestions on Reddit: How do I meet a capybara in Australia?",
+                        "og:site_name": "Reddit",
+                        "og:title": "r/NoStupidQuestions on Reddit: How do I meet a capybara in Australia?",
+                        "og:image:height": "630",
+                        "msapplication-navbutton-color": "#000000",
+                        "og:description": "Posted by u/broccoliqueen_72 - 3 votes and 1 comment",
+                        "twitter:image": "https://share.redd.it/preview/post/10hpzil",
+                        "apple-mobile-web-app-status-bar-style": "black",
+                        "twitter:site": "@reddit",
+                        "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+                        "apple-mobile-web-app-capable": "yes",
+                        "og:ttl": "600",
+                        "og:url": "https://www.reddit.com/r/NoStupidQuestions/comments/10hpzil/how_do_i_meet_a_capybara_in_australia/"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://share.redd.it/preview/post/10hpzil"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Capybaras - Picture of Brevard Zoo, Melbourne - Tripadvisor",
+            "htmlTitle": "<b>Capybaras</b> - Picture of Brevard Zoo, <b>Melbourne</b> - Tripadvisor",
+            "link": "https://www.tripadvisor.com/LocationPhotoDirectLink-g34433-d123096-i102189824-Brevard_Zoo-Melbourne_Brevard_County_Florida.html",
+            "displayLink": "www.tripadvisor.com",
+            "snippet": "Brevard Zoo, Melbourne Picture: Capybaras - Check out Tripadvisor members' 1909 candid photos and videos of Brevard Zoo.",
+            "htmlSnippet": "Brevard Zoo, <b>Melbourne</b> Picture: <b>Capybaras</b> - Check out Tripadvisor members&#39; 1909 candid photos and videos of Brevard Zoo.",
+            "formattedUrl": "https://www.tripadvisor.com/LocationPhotoDirectLink-g34433-d123096-i1...",
+            "htmlFormattedUrl": "https://www.tripadvisor.com/LocationPhotoDirectLink-g34433-d123096-i1...",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsabS7zW3o9Ri0xplwow69nyVy1T57YnO4srKlmJtfP1f1Z5CB-uuf8hk&s",
+                        "width": "275",
+                        "height": "183"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "twitter:app:url:iphone": "tripadvisor://www.tripadvisor.com/LocationPhotoDirectLink-g34433-d123096-i102189824-Brevard_Zoo-Melbourne_Brevard_County_Florida.html?m=33762",
+                        "og:image": "https://media-cdn.tripadvisor.com/media/photo-s/12/e6/5b/54/giraffe.jpg",
+                        "apple-itunes-app": "app-id=284876795",
+                        "theme-color": "#34e0a1",
+                        "og:image:width": "550",
+                        "al:ios:app_name": "TripAdvisor",
+                        "twitter:app:url:ipad": "tripadvisor://www.tripadvisor.com/LocationPhotoDirectLink-g34433-d123096-i102189824-Brevard_Zoo-Melbourne_Brevard_County_Florida.html?m=33762",
+                        "og:title": "Capybaras - Picture of Brevard Zoo, Melbourne - Tripadvisor",
+                        "twitter:app:id:ipad": "284876795",
+                        "og:image:height": "367",
+                        "twitter:app:id:iphone": "284876795",
+                        "al:ios:url": "tripadvisor://www.tripadvisor.com/LocationPhotoDirectLink-g34433-d123096-i102189824-Brevard_Zoo-Melbourne_Brevard_County_Florida.html?m=33762",
+                        "og:description": "Brevard Zoo, Melbourne Picture: Capybaras - Check out Tripadvisor members' 1909 candid photos and videos of Brevard Zoo",
+                        "fb:pages": "5863091683",
+                        "al:ios:app_store_id": "284876795",
+                        "twitter:image": "//static.tacdn.com/img2/brand_refresh/application_icons/post-image-550x550.png",
+                        "viewport": "width=device-width, initial-scale=1.0, user-scalable=no",
+                        "format-detection": "telephone=no"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://media-cdn.tripadvisor.com/media/photo-s/12/e6/5b/54/giraffe.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Capital of Australia : r/MandelaEffect",
+            "htmlTitle": "Capital of Australia : r/MandelaEffect",
+            "link": "https://www.reddit.com/r/MandelaEffect/comments/11g07mx/capital_of_australia/",
+            "displayLink": "www.reddit.com",
+            "snippet": "Mar 2, 2023 ... Sydney? Maybe Adelaide? Melbourne? Well I never even heard of Cranberry, I mean Capybara, I mean Canberra. FML how did this happen?",
+            "htmlSnippet": "Mar 2, 2023 <b>...</b> Sydney? Maybe Adelaide? <b>Melbourne</b>? Well I never even heard of Cranberry, I mean <b>Capybara</b>, I mean Canberra. FML how did this happen?",
+            "formattedUrl": "https://www.reddit.com/r/MandelaEffect/comments/.../capital_of_australia/",
+            "htmlFormattedUrl": "https://www.reddit.com/r/MandelaEffect/comments/.../capital_of_australia/",
+            "pagemap": {
+                "metatags": [
+                    {
+                        "og:image": "https://share.redd.it/preview/post/11g07mx",
+                        "theme-color": "#000000",
+                        "og:image:width": "1200",
+                        "og:type": "website",
+                        "og:image:alt": "An image containing a preview of the post",
+                        "twitter:card": "summary_large_image",
+                        "twitter:title": "r/MandelaEffect on Reddit: Capital of Australia",
+                        "og:site_name": "Reddit",
+                        "og:title": "r/MandelaEffect on Reddit: Capital of Australia",
+                        "og:image:height": "630",
+                        "msapplication-navbutton-color": "#000000",
+                        "og:description": "Posted by u/MagpieSpit - No votes and 27 comments",
+                        "twitter:image": "https://share.redd.it/preview/post/11g07mx",
+                        "apple-mobile-web-app-status-bar-style": "black",
+                        "twitter:site": "@reddit",
+                        "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+                        "apple-mobile-web-app-capable": "yes",
+                        "og:ttl": "600",
+                        "og:url": "https://www.reddit.com/r/MandelaEffect/comments/11g07mx/capital_of_australia/"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://share.redd.it/preview/post/11g07mx"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "3D Capybara – MiniCloud Custom Cakes and Desserts Melbourne",
+            "htmlTitle": "3D <b>Capybara</b> – MiniCloud Custom Cakes and Desserts <b>Melbourne</b>",
+            "link": "https://minicloud.com.au/product/3d-capybara/",
+            "displayLink": "minicloud.com.au",
+            "snippet": "MiniCloud Custom Cakes and Desserts Melbourne ... 3D Capybara. $149.00. 3D Capybara quantity. Add to cart. Category: Uncategorised. Description; Reviews (0).",
+            "htmlSnippet": "MiniCloud Custom Cakes and Desserts <b>Melbourne</b> ... 3D <b>Capybara</b>. $149.00. 3D <b>Capybara</b> quantity. Add to cart. Category: Uncategorised. Description; Reviews (0).",
+            "formattedUrl": "https://minicloud.com.au/product/3d-capybara/",
+            "htmlFormattedUrl": "https://minicloud.com.au/product/3d-<b>capybara</b>/",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCvJ-uADDs8tS4wOg0-GCX7w3D8O6j9KNszXDPnzdzAT-rVwVlJ_YYRDms&s",
+                        "width": "225",
+                        "height": "225"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "viewport": "width=device-width, initial-scale=1",
+                        "msapplication-tileimage": "https://minicloud.com.au/wp-content/uploads/2024/04/cropped-miniCloudFavIcon-270x270.png"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://minicloud.com.au/wp-content/uploads/2024/03/DSC08356.jpg"
+                    }
+                ],
+                "hatomfeed": [
+                    {}
+                ]
+            }
+        }
+    ]
+}

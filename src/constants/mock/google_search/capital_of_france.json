@@ -1,0 +1,543 @@
+{
+    "kind": "customsearch#search",
+    "url": {
+        "type": "application/json",
+        "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+    },
+    "queries": {
+        "request": [
+            {
+                "title": "Google Custom Search - what is the capital of france",
+                "totalResults": "726000000",
+                "searchTerms": "what is the capital of france",
+                "count": 10,
+                "startIndex": 1,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "37af15c1ae400405b"
+            }
+        ],
+        "nextPage": [
+            {
+                "title": "Google Custom Search - what is the capital of france",
+                "totalResults": "726000000",
+                "searchTerms": "what is the capital of france",
+                "count": 10,
+                "startIndex": 11,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "37af15c1ae400405b"
+            }
+        ]
+    },
+    "context": {
+        "title": "googlexity"
+    },
+    "searchInformation": {
+        "searchTime": 0.514889,
+        "formattedSearchTime": "0.51",
+        "totalResults": "726000000",
+        "formattedTotalResults": "726,000,000"
+    },
+    "items": [
+        {
+            "kind": "customsearch#result",
+            "title": "Paris, France - Intercultural City - Intercultural cities programme",
+            "htmlTitle": "Paris, <b>France</b> - Intercultural City - Intercultural cities programme",
+            "link": "https://www.coe.int/en/web/interculturalcities/paris",
+            "displayLink": "www.coe.int",
+            "snippet": "Paris is the capital and most populous city of France. Situated on the Seine River, in the north of the country, it is in the centre of the Île-de-France ...",
+            "htmlSnippet": "Paris is the <b>capital</b> and most populous city of <b>France</b>. Situated on the Seine River, in the north of the country, it is in the centre of the Île-de-<b>France</b>&nbsp;...",
+            "formattedUrl": "https://www.coe.int/en/web/interculturalcities/paris",
+            "htmlFormattedUrl": "https://www.coe.int/en/web/interculturalcities/paris",
+            "pagemap": {
+                "organization": [
+                    {
+                        "name": "Council of Europe",
+                        "telephone": "+33 (0)3 88 41 20 00"
+                    }
+                ],
+                "postaladdress": [
+                    {
+                        "addresslocality": "Strasbourg Cedex, France",
+                        "postalcode": "F-67075",
+                        "streetaddress": "Avenue de l'Europe"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "msapplication-tilecolor": "#da532c",
+                        "msapplication-config": "https://www.coe.int/o/coe-2014-theme/images/favicon/browserconfig.xml",
+                        "og:type": "website",
+                        "theme-color": "#153d8a",
+                        "og:site_name": "Intercultural cities programme",
+                        "og:locale:alternate": "eu_ES",
+                        "viewport": "initial-scale=1.0, width=device-width",
+                        "og:title": "Paris, France - Intercultural City - Intercultural cities programme - www.coe.int",
+                        "og:locale": "en_GB",
+                        "og:url": "https://www.coe.int/en/web/interculturalcities/paris"
+                    }
+                ],
+                "listitem": [
+                    {
+                        "item": "Democracy and Human Dignity",
+                        "name": "Democracy and Human Dignity",
+                        "position": "1"
+                    },
+                    {
+                        "item": "Intercultural cities programme",
+                        "name": "Intercultural cities programme",
+                        "position": "2"
+                    },
+                    {
+                        "item": "Members",
+                        "name": "Members",
+                        "position": "3"
+                    },
+                    {
+                        "name": "Paris",
+                        "position": "4"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Paris - Wikipedia",
+            "htmlTitle": "Paris - Wikipedia",
+            "link": "https://en.wikipedia.org/wiki/Paris",
+            "displayLink": "en.wikipedia.org",
+            "snippet": "The City of Paris is the centre of the Île-de-France region, or Paris Region, with an official estimated population of 12,271,794 inhabitants in January 2023, ...",
+            "htmlSnippet": "The City of Paris is the centre of the Île-de-<b>France</b> region, or Paris Region, with an official estimated population of 12,271,794 inhabitants in January 2023,&nbsp;...",
+            "formattedUrl": "https://en.wikipedia.org/wiki/Paris",
+            "htmlFormattedUrl": "https://en.wikipedia.org/wiki/Paris",
+            "pagemap": {
+                "hcard": [
+                    {
+                        "url_text": "paris.fr",
+                        "fn": "Paris",
+                        "nickname": "Fluctuat nec mergitur \"Tossed by the waves but never sunk\"",
+                        "category": "Capital city, commune, and department",
+                        "url": "paris.fr"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "referrer": "origin",
+                        "og:image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/1200px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg",
+                        "theme-color": "#eaecf0",
+                        "og:image:width": "1200",
+                        "og:type": "website",
+                        "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0",
+                        "og:title": "Paris - Wikipedia",
+                        "og:image:height": "750",
+                        "format-detection": "telephone=no"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Paris facts: the capital of France in history",
+            "htmlTitle": "Paris facts: the <b>capital of France</b> in history",
+            "link": "https://home.adelphi.edu/~ca19535/page%204.html",
+            "displayLink": "home.adelphi.edu",
+            "snippet": "Paris is the capital of France, the largest country of Europe with 550 000 km2 (65 millions inhabitants). Paris has 2.234 million inhabitants end 2011 ...",
+            "htmlSnippet": "Paris is the <b>capital of France</b>, the largest country of Europe with 550 000 km2 (65 millions inhabitants). Paris has 2.234 million inhabitants end 2011&nbsp;...",
+            "formattedUrl": "https://home.adelphi.edu/~ca19535/page%204.html",
+            "htmlFormattedUrl": "https://home.adelphi.edu/~ca19535/page%204.html",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuabbjyTSQdm08in1kajd3LW1841TxBxaHjERnGccFRjyxmT-SCDF4Ces&s",
+                        "width": "284",
+                        "height": "177"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://home.adelphi.edu/~ca19535/paris_pic.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "List of capitals of France - Wikipedia",
+            "htmlTitle": "List of capitals of <b>France</b> - Wikipedia",
+            "link": "https://en.wikipedia.org/wiki/List_of_capitals_of_France",
+            "displayLink": "en.wikipedia.org",
+            "snippet": "This is a chronological list of capitals of France. The capital of France has been Paris since its liberation in 1944.",
+            "htmlSnippet": "This is a chronological list of capitals of France. The <b>capital of France</b> has been Paris since its liberation in 1944.",
+            "formattedUrl": "https://en.wikipedia.org/wiki/List_of_capitals_of_France",
+            "htmlFormattedUrl": "https://en.wikipedia.org/wiki/List_of_<b>capital</b>s_of_<b>France</b>",
+            "pagemap": {
+                "metatags": [
+                    {
+                        "referrer": "origin",
+                        "theme-color": "#eaecf0",
+                        "og:type": "website",
+                        "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0",
+                        "og:title": "List of capitals of France - Wikipedia",
+                        "format-detection": "telephone=no"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "France | History, Maps, Flag, Population, Cities, Capital, & Facts ...",
+            "htmlTitle": "<b>France</b> | History, Maps, Flag, Population, Cities, <b>Capital</b>, &amp; Facts ...",
+            "link": "https://www.britannica.com/place/France",
+            "displayLink": "www.britannica.com",
+            "snippet": "France, a country of northwestern Europe, is historically and culturally among the most important countries in the Western world.",
+            "htmlSnippet": "<b>France</b>, a country of northwestern Europe, is historically and culturally among the most important countries in the Western world.",
+            "formattedUrl": "https://www.britannica.com/place/France",
+            "htmlFormattedUrl": "https://www.britannica.com/place/<b>France</b>",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqQtmfnjfVsAdkmOm9wuXNBpOQi1EVX1xpUJrsIfC9nHD-xSJ0rCyMLoI&s",
+                        "width": "275",
+                        "height": "183"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "og:image": "https://cdn.britannica.com/82/682-050-8AA3D6A6/Flag-France.jpg",
+                        "twitter:card": "summary_large_image",
+                        "og:type": "ARTICLE",
+                        "og:site_name": "Encyclopedia Britannica",
+                        "og:title": "France | History, Maps, Flag, Population, Cities, Capital, & Facts",
+                        "og:image:type": "image/jpeg",
+                        "og:description": "France, a country of northwestern Europe, is historically and culturally among the most important countries in the Western world. It has also played a highly significant role in international affairs for centuries. Its capital is Paris, one of the most important cultural and commercial centers in the world.",
+                        "twitter:image": "https://cdn.britannica.com/82/682-050-8AA3D6A6/Flag-France.jpg",
+                        "fb:app_id": "1887621861548296",
+                        "twitter:site": "@britannica",
+                        "viewport": "width=device-width, initial-scale=1.0",
+                        "twitter:description": "France, a country of northwestern Europe, is historically and culturally among the most important countries in the Western world. It has also played a highly significant role in international affairs for centuries. Its capital is Paris, one of the most important cultural and commercial centers in the world.",
+                        "og:url": "https://www.britannica.com/place/France"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://cdn.britannica.com/82/682-050-8AA3D6A6/Flag-France.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Marseille, the Secret Capital of France - The New York Times",
+            "htmlTitle": "Marseille, the Secret <b>Capital of France</b> - The New York Times",
+            "link": "https://www.nytimes.com/2013/10/04/t-magazine/marseille-the-secret-capital-of-france.html",
+            "displayLink": "www.nytimes.com",
+            "snippet": "Oct 4, 2013 ... Marseille has undergone a slew of sleek development projects of late, but it remains a gloriously seedy and lively city, as characterized by ...",
+            "htmlSnippet": "Oct 4, 2013 <b>...</b> Marseille has undergone a slew of sleek development projects of late, but it remains a gloriously seedy and lively city, as characterized by&nbsp;...",
+            "formattedUrl": "https://www.nytimes.com/2013/.../marseille-the-secret-capital-of-france.htm...",
+            "htmlFormattedUrl": "https://www.nytimes.com/2013/.../marseille-the-secret-<b>capital-of-france</b>.htm...",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSprrXn9suqnypdg5k9QBasiULTW_3Igj6BxKQqjv9zW3JXMRY1b-rnA2U&s",
+                        "width": "310",
+                        "height": "162"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "og:image": "https://static01.nyt.com/images/2013/10/04/t-magazine/04well-marseille-slide-OCQ3/04well-marseille-slide-OCQ3-facebookJumbo.jpg?year=2013&h=524&w=1000&s=c83fa4bf55b0732cbaba4f1952ed0ac498dea3ec740775824d041d6a7a60143b&k=ZQJBKqZ0VN",
+                        "nyt_uri": "nyt://article/a84c69bd-11ff-5b00-89f6-15003c061f41",
+                        "twitter:app:id:googleplay": "com.nytimes.android",
+                        "twitter:card": "summary_large_image",
+                        "article:published_time": "2013-10-04T04:00:00.000Z",
+                        "pt": "article",
+                        "twitter:url": "https://www.nytimes.com/2013/10/04/t-magazine/marseille-the-secret-capital-of-france.html",
+                        "pdate": "20131004",
+                        "articleid": "100000003785265",
+                        "al:android:package": "com.nytimes.android",
+                        "al:ipad:app_store_id": "357066198",
+                        "twitter:app:name:googleplay": "NYTimes",
+                        "og:description": "Marseille has undergone a slew of sleek development projects of late, but it remains a gloriously seedy and lively city, as characterized by contrasts as it is by abundant sun and sea.",
+                        "twitter:image": "https://static01.nyt.com/images/2013/10/04/t-magazine/04well-marseille-slide-OCQ3/04well-marseille-slide-OCQ3-articleLarge.jpg?year=2013&h=600&w=600&s=8a1e3875d35cf4a823ba2903e2ba8f87f68c768bb43817c8d433133346b8f855&k=ZQJBKqZ0VN&tw=1",
+                        "pst": "News",
+                        "al:iphone:app_name": "NYTimes",
+                        "twitter:site": "@nytimes",
+                        "article:modified_time": "2015-08-21T00:19:40.000Z",
+                        "article:content_tier": "metered",
+                        "msapplication-starturl": "https://www.nytimes.com",
+                        "image": "https://static01.nyt.com/images/2013/10/04/t-magazine/04well-marseille-slide-OCQ3/04well-marseille-slide-OCQ3-facebookJumbo.jpg?year=2013&h=524&w=1000&s=c83fa4bf55b0732cbaba4f1952ed0ac498dea3ec740775824d041d6a7a60143b&k=ZQJBKqZ0VN",
+                        "og:type": "article",
+                        "twitter:title": "Marseille, the Secret Capital of France (Published 2013)",
+                        "article:section": "T Magazine",
+                        "cg": "t-magazine",
+                        "pubp_event_id": "pubp://event/accf9cdd48604a5293badf61ee081edb",
+                        "og:title": "Marseille, the Secret Capital of France (Published 2013)",
+                        "slack-app-id": "A0121HXPPTQ",
+                        "url": "https://www.nytimes.com/2013/10/04/t-magazine/marseille-the-secret-capital-of-france.html",
+                        "al:iphone:url": "nytimes://www.nytimes.com/2013/10/04/t-magazine/marseille-the-secret-capital-of-france.html",
+                        "al:android:url": "nyt://article/a84c69bd-11ff-5b00-89f6-15003c061f41",
+                        "twitter:app:url:googleplay": "nyt://article/a84c69bd-11ff-5b00-89f6-15003c061f41",
+                        "fb:app_id": "9869919170",
+                        "al:ipad:url": "nytimes://www.nytimes.com/2013/10/04/t-magazine/marseille-the-secret-capital-of-france.html",
+                        "byl": "By Michael Kimmelman",
+                        "viewport": "width=device-width, initial-scale=1",
+                        "twitter:description": "Marseille has undergone a slew of sleek development projects of late, but it remains a gloriously seedy and lively city, as characterized by contrasts as it is by abundant sun and sea.",
+                        "al:iphone:app_store_id": "284862083",
+                        "al:ipad:app_name": "NYTimes",
+                        "og:url": "https://www.nytimes.com/2013/10/04/t-magazine/marseille-the-secret-capital-of-france.html",
+                        "al:android:app_name": "NYTimes",
+                        "article:opinion": "false"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://static01.nyt.com/images/2013/10/04/t-magazine/04well-marseille-slide-OCQ3/04well-marseille-slide-OCQ3-facebookJumbo.jpg?year=2013&h=524&w=1000&s=c83fa4bf55b0732cbaba4f1952ed0ac498dea3ec740775824d041d6a7a60143b&k=ZQJBKqZ0VN"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Versailles, “capital” of the kingdom, 1682 | Palace of Versailles",
+            "htmlTitle": "Versailles, “<b>capital</b>” of the kingdom, 1682 | Palace of Versailles",
+            "link": "https://en.chateauversailles.fr/discover/history/key-dates/versailles-capital-kingdom-1682",
+            "displayLink": "en.chateauversailles.fr",
+            "snippet": "Athough Paris never ceased to be the official capital, the decision made Versailles the de facto centre of the kingdom until 1789. Above all, and to the great ...",
+            "htmlSnippet": "Athough Paris never ceased to be the official <b>capital</b>, the decision made Versailles the de facto centre of the kingdom until 1789. Above all, and to the great&nbsp;...",
+            "formattedUrl": "https://en.chateauversailles.fr/discover/.../versailles-capital-kingdom-1682",
+            "htmlFormattedUrl": "https://en.chateauversailles.fr/discover/.../versailles-<b>capital</b>-kingdom-1682",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW4X_ugk21mqPEteR5qz011OKRz4sQnSITiDFrmGeAWd6D39AP3SIjuU_7&s",
+                        "width": "310",
+                        "height": "163"
+                    }
+                ],
+                "xfn": [
+                    {}
+                ],
+                "metatags": [
+                    {
+                        "smartbanner:button-url-apple": "http://onelink.to/chateau",
+                        "og:image": "https://en.chateauversailles.fr/sites/default/files/styles/reseaux_sociaux/public/visuels_principaux/epoques/inv.grav_6592_001.jpg?itok=CHOjayJM",
+                        "twitter:card": "summary_large_image",
+                        "article:published_time": "2019-08-14T14:39:41+02:00",
+                        "theme-color": "#ffffff",
+                        "og:site_name": "Palace of Versailles",
+                        "twitter:url": "https://en.chateauversailles.fr/discover/history/key-dates/versailles-capital-kingdom-1682",
+                        "apple-mobile-web-app-title": "Versailles",
+                        "smartbanner:hide-ttl": "86400000",
+                        "msapplication-tileimage": "/sites/all/themes/versailles/favicons/mstile-144x144.png",
+                        "og:description": "The establishment of the Court and the seat of power in Versailles had been underway since 1677, when the works on the site were sped up and the king doubled up state services between Paris and Versailles. On 6 May 1682, Versailles became the headquarters of the government. Athough Paris never ceased to be the official capital, the decision made Versailles the de facto centre of the kingdom until 1789. Above all, and to the great dismay of Colbert, who wanted the king and his court to stay in Paris, the move confirmed to the king just how much he liked Versailles. The works on Versailles were only just beginning.",
+                        "twitter:creator": "@CVersailles",
+                        "smartbanner:author": "Download the free app: audio tours and interactive map",
+                        "twitter:image": "https://en.chateauversailles.fr/sites/default/files/styles/reseaux_sociaux/public/visuels_principaux/epoques/inv.grav_6592_001.jpg?itok=CHOjayJM",
+                        "smartbanner:icon-apple": "/sites/all/themes/versailles/images/icon_app-chateau_2017_ios.png",
+                        "twitter:site": "@CVersailles",
+                        "article:modified_time": "2019-08-14T14:39:41+02:00",
+                        "application-name": "Versailles",
+                        "msapplication-tilecolor": "#da532c",
+                        "og:type": "article",
+                        "twitter:title": "Versailles, “capital” of the kingdom, 1682",
+                        "smartbanner:button": "View",
+                        "smartbanner:button-url-google": "http://onelink.to/chateau",
+                        "og:title": "Versailles, “capital” of the kingdom, 1682",
+                        "smartbanner:enabled-platforms": "android,ios",
+                        "smartbanner:icon-google": "/sites/all/themes/versailles/images/icon_app-chateau_2017_android-min.png",
+                        "og:updated_time": "2019-08-14T14:39:41+02:00",
+                        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0",
+                        "twitter:description": "The establishment of the Court and the seat of power in Versailles had been underway since 1677, when the works on the site were sped up and the king doubled up state services between Paris and",
+                        "og:url": "https://en.chateauversailles.fr/discover/history/key-dates/versailles-capital-kingdom-1682"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://en.chateauversailles.fr/sites/default/files/styles/reseaux_sociaux/public/visuels_principaux/epoques/inv.grav_6592_001.jpg?itok=CHOjayJM"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Docs: \"The capital of France is\" is a poorly designed example · Issue ...",
+            "htmlTitle": "Docs: &quot;The <b>capital of France</b> is&quot; is a poorly designed example · Issue ...",
+            "link": "https://github.com/nomic-ai/gpt4all/issues/1792",
+            "displayLink": "github.com",
+            "snippet": "Dec 29, 2023 ... Issue you'd like to raise. Firstly, I'm sorry if this is user-error. I am new to GPT4All and LLMs in general. I am following the steps here: ...",
+            "htmlSnippet": "Dec 29, 2023 <b>...</b> Issue you&#39;d like to raise. Firstly, I&#39;m sorry if this is user-error. I am new to GPT4All and LLMs in general. I am following the steps here:&nbsp;...",
+            "formattedUrl": "https://github.com/nomic-ai/gpt4all/issues/1792",
+            "htmlFormattedUrl": "https://github.com/nomic-ai/gpt4all/issues/1792",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4YMT1QkISI0zZBD08jhateLgCuyIFFTZD5PexG4m5VYhl8OC64y5f61g&s",
+                        "width": "318",
+                        "height": "159"
+                    }
+                ],
+                "softwaresourcecode": [
+                    {
+                        "author": "nomic-ai",
+                        "name": "gpt4all"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "octolytics-url": "https://collector.github.com/github/collect",
+                        "apple-itunes-app": "app-id=1477376905, app-argument=https://github.com/_view_fragments/issues/show/nomic-ai/gpt4all/1792/issue_layout",
+                        "og:image": "https://opengraph.githubassets.com/9e93835360010733d8c6d48773f9d2f503db95031394b2cdecbce41ef96d88af/nomic-ai/gpt4all/issues/1792",
+                        "twitter:card": "summary_large_image",
+                        "og:image:width": "1200",
+                        "theme-color": "#1e2327",
+                        "og:site_name": "GitHub",
+                        "hovercard-subject-tag": "issue:2060439217",
+                        "turbo-body-classes": "logged-out env-production page-responsive",
+                        "html-safe-nonce": "91c4a2fb6dfb8174a85706ff69ed2ba11d21da97eef978db7312856bc1f59a0c",
+                        "expected-hostname": "github.com",
+                        "og:description": "Issue you'd like to raise. Firstly, I'm sorry if this is user-error. I am new to GPT4All and LLMs in general. I am following the steps here: https://docs.gpt4all.io/gpt4all_python.html#__tabbed_1_1...",
+                        "browser-errors-url": "https://api.github.com/_private/browser/errors",
+                        "octolytics-dimension-user_login": "nomic-ai",
+                        "hostname": "github.com",
+                        "twitter:site": "@github",
+                        "browser-stats-url": "https://api.github.com/_private/browser/stats",
+                        "route-pattern": "/_view_fragments/issues/show/:user_id/:repository/:id/issue_layout(.:format)",
+                        "visitor-payload": "eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJEOUUyOjFFMENFODpDNjU0OTU6MTE3NzY0RDo2Njk3ODFDOSIsInZpc2l0b3JfaWQiOiI5MDkzNzA2OTc1OTA5NzQxMDAzIiwicmVnaW9uX2VkZ2UiOiJpYWQiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=",
+                        "github-keyboard-shortcuts": "repository,issues,copilot",
+                        "octolytics-dimension-repository_id": "619959033",
+                        "octolytics-dimension-repository_network_root_nwo": "nomic-ai/gpt4all",
+                        "twitter:title": "Docs: \"The capital of France is\" is a poorly designed example · Issue #1792 · nomic-ai/gpt4all",
+                        "og:image:alt": "Issue you'd like to raise. Firstly, I'm sorry if this is user-error. I am new to GPT4All and LLMs in general. I am following the steps here: https://docs.gpt4all.io/gpt4all_python.html#__tabbed_1_1...",
+                        "og:type": "object",
+                        "og:title": "Docs: \"The capital of France is\" is a poorly designed example · Issue #1792 · nomic-ai/gpt4all",
+                        "visitor-hmac": "1cc5e97744a76e7d7f3824d68538bef9c9d41fbfe6a3de96f97875096fec4439",
+                        "og:image:height": "600",
+                        "turbo-cache-control": "no-preview",
+                        "route-action": "issue_layout",
+                        "request-id": "D9E2:1E0CE8:C65495:117764D:669781C9",
+                        "analytics-location": "/<user-name>/<repo-name>/voltron/issues_fragments/issue_layout",
+                        "color-scheme": "light dark",
+                        "octolytics-dimension-repository_is_fork": "false",
+                        "go-import": "github.com/nomic-ai/gpt4all git https://github.com/nomic-ai/gpt4all.git",
+                        "twitter:image:src": "https://opengraph.githubassets.com/9e93835360010733d8c6d48773f9d2f503db95031394b2cdecbce41ef96d88af/nomic-ai/gpt4all/issues/1792",
+                        "octolytics-dimension-user_id": "102670180",
+                        "octolytics-dimension-repository_public": "true",
+                        "fb:app_id": "1401488693436528",
+                        "octolytics-dimension-repository_network_root_id": "619959033",
+                        "octolytics-dimension-repository_nwo": "nomic-ai/gpt4all",
+                        "viewport": "width=device-width",
+                        "twitter:description": "Issue you&#39;d like to raise. Firstly, I&#39;m sorry if this is user-error. I am new to GPT4All and LLMs in general. I am following the steps here: https://docs.gpt4all.io/gpt4all_python.html#__ta...",
+                        "og:author:username": "DarylGraves",
+                        "route-controller": "voltron_issues_fragments",
+                        "current-catalog-service-hash": "81bb79d38c15960b92d99bca9288a9108c7a47b18f2423d0f6438c5b7bcd2114",
+                        "og:url": "https://github.com/nomic-ai/gpt4all/issues/1792"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://opengraph.githubassets.com/9e93835360010733d8c6d48773f9d2f503db95031394b2cdecbce41ef96d88af/nomic-ai/gpt4all/issues/1792"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Escape Paris And Visit Lyon, The Gastronomic Capital Of France",
+            "htmlTitle": "Escape Paris And Visit Lyon, The Gastronomic <b>Capital Of France</b>",
+            "link": "https://www.forbes.com/sites/ceciliapelloux/2019/10/28/escape-paris-visit-lyon-the-gastronomic-capital-of-france/",
+            "displayLink": "www.forbes.com",
+            "snippet": "Oct 29, 2019 ... Lyon is well known as the city has been called the gastronomic capital of France. Located between Paris and South Of France, ...",
+            "htmlSnippet": "Oct 29, 2019 <b>...</b> Lyon is well known as the city has been called the gastronomic <b>capital of France</b>. Located between Paris and South Of France,&nbsp;...",
+            "formattedUrl": "https://www.forbes.com/.../escape-paris-visit-lyon-the-gastronomic-capital-...",
+            "htmlFormattedUrl": "https://www.forbes.com/.../escape-paris-visit-lyon-the-gastronomic-<b>capital-</b>...",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnXDx2qw5WK-ArnQGLLTNyRkgPLnLsroEodoPigos55llA-HpfDMgx6aJa&s",
+                        "width": "259",
+                        "height": "194"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "twitter:card": "summary_large_image",
+                        "og:site_name": "Forbes",
+                        "article:id": "blogAndPostId/blog/post/5140-5daeffc85aac80000643161b",
+                        "og:description": "Lyon is well known as the city has been called the gastronomic capital of France. Located between Paris and South Of France, Lyon is a crossroads city at the confluence of two rivers. Its position makes this city magical thanks to a rich history dating back to the Roman Period.",
+                        "twitter:creator": "@ceciliapelloux",
+                        "article:publisher": "https://www.facebook.com/forbes",
+                        "twitter:image": "https://imageio.forbes.com/specials-images/imageserve/5db781041a8427000789087d/0x0.jpg?format=jpg&crop=4368,2457,x0,y225,safe&height=600&width=1200&fit=bounds",
+                        "twitter:site": "@forbes",
+                        "news_keywords": "lyon,food,france,gastronomy,travel",
+                        "article:published": "2019-10-28",
+                        "article:channel": "Lifestyle",
+                        "image": "https://imageio.forbes.com/specials-images/imageserve/5db781041a8427000789087d/0x0.jpg?format=jpg&crop=4368,2457,x0,y225,safe&height=900&width=1600&fit=bounds",
+                        "article:section": "Travel",
+                        "og:type": "article",
+                        "twitter:title": "Escape Paris And Visit Lyon, The Gastronomic Capital Of France",
+                        "author": "Cécilia Pelloux",
+                        "article:section_url": "https://www.forbes.com/travel/",
+                        "og:title": "Escape Paris And Visit Lyon, The Gastronomic Capital Of France",
+                        "amp-google-client-id-api": "googleanalytics",
+                        "og:updated_time": "2019-10-29T11:14:01.891-04:00",
+                        "article:author": "Cécilia Pelloux",
+                        "referrer": "no-referrer-when-downgrade",
+                        "fb:app_id": "123694841080850",
+                        "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=2,user-scalable=yes,minimal-ui",
+                        "twitter:description": "Lyon is well known as the city has been called the gastronomic capital of France. Located between Paris and South Of France, Lyon is a crossroads city at the confluence of two rivers. Its position makes this city magical thanks to a rich history dating back to the Roman Period.",
+                        "og:url": "https://www.forbes.com/sites/ceciliapelloux/2019/10/28/escape-paris-visit-lyon-the-gastronomic-capital-of-france/",
+                        "article:modified": "2019-10-29",
+                        "format-detection": "telephone=no"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://imageio.forbes.com/specials-images/imageserve/5db77e3e1a84270007890818/The-ruins-of-ancient-Lugdunum-and-its-amphitheater-/960x0.jpg?height=533&width=711&fit=bounds"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Lyon is Taking Over as France's Global Gastronomy Capital",
+            "htmlTitle": "Lyon is Taking Over as <b>France&#39;s</b> Global Gastronomy <b>Capital</b>",
+            "link": "https://guide.michelin.com/en/article/travel/lyon-france-best-restaurants-paul-bocuse",
+            "displayLink": "guide.michelin.com",
+            "snippet": "Jan 6, 2023 ... Where to Eat in Lyon. There are 91 MICHELIN Guide restaurants in Lyon, from Bib Gourmand to Two Stars. For a more traditional bouchon experience ...",
+            "htmlSnippet": "Jan 6, 2023 <b>...</b> Where to Eat in Lyon. There are 91 MICHELIN Guide restaurants in Lyon, from Bib Gourmand to Two Stars. For a more traditional bouchon experience&nbsp;...",
+            "formattedUrl": "https://guide.michelin.com/en/.../lyon-france-best-restaurants-paul-bocuse",
+            "htmlFormattedUrl": "https://guide.michelin.com/en/.../lyon-<b>france</b>-best-restaurants-paul-bocuse",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrtHxTbyobh67p5ZBFknKcnT4T8fa0Mt2sebxMWqa6dgOjsk5_cSkwVwI&s",
+                        "width": "300",
+                        "height": "168"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "layout": "michelin_revamp",
+                        "og:image": "https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2023/01/04/4960366fcba74b44955d563cb3cdb6aa_Hero_Lyon_HEMIS_3091946.jpg",
+                        "apple-itunes-app": "app-id=1541129177, app-argument=https://guide.michelin.com/en/article/travel/lyon-france-best-restaurants-paul-bocuse",
+                        "theme-color": "#fff",
+                        "og:type": "Article",
+                        "og:site_name": "MICHELIN Guide",
+                        "viewport": "width=device-width, initial-scale=1.0, user-scalable=0",
+                        "og:title": "Lyon is Taking Over as France's Global Gastronomy Capital",
+                        "og:url": "https://guide.michelin.com/en/article/travel/lyon-france-best-restaurants-paul-bocuse",
+                        "og:description": "A cornerstone of cuisine with plenty to explore."
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2023/01/04/4960366fcba74b44955d563cb3cdb6aa_Hero_Lyon_HEMIS_3091946.jpg"
+                    }
+                ]
+            }
+        }
+    ]
+}

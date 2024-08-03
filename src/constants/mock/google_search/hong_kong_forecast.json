@@ -1,0 +1,413 @@
+{
+    "kind": "customsearch#search",
+    "url": {
+        "type": "application/json",
+        "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+    },
+    "queries": {
+        "request": [
+            {
+                "title": "Google Custom Search - hong kong forecast 12th August",
+                "totalResults": "48900000",
+                "searchTerms": "hong kong forecast 12th August",
+                "count": 10,
+                "startIndex": 1,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "37af15c1ae400405b"
+            }
+        ],
+        "nextPage": [
+            {
+                "title": "Google Custom Search - hong kong forecast 12th August",
+                "totalResults": "48900000",
+                "searchTerms": "hong kong forecast 12th August",
+                "count": 10,
+                "startIndex": 11,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "37af15c1ae400405b"
+            }
+        ]
+    },
+    "context": {
+        "title": "googlexity"
+    },
+    "searchInformation": {
+        "searchTime": 0.511713,
+        "formattedSearchTime": "0.51",
+        "totalResults": "48900000",
+        "formattedTotalResults": "48,900,000"
+    },
+    "items": [
+        {
+            "kind": "customsearch#result",
+            "title": "Hong Kong, Sha Tin, Hong Kong Monthly Weather | AccuWeather",
+            "htmlTitle": "<b>Hong Kong</b>, Sha Tin, <b>Hong Kong</b> Monthly <b>Weather</b> | AccuWeather",
+            "link": "https://www.accuweather.com/en/hk/hong-kong/1123655/august-weather/1123655",
+            "displayLink": "www.accuweather.com",
+            "snippet": "August September October November December. 2024. 2023 2024 2025 · Daily. S ... Today 1 *2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 ...",
+            "htmlSnippet": "<b>August</b> September <b>October November</b> December. 2024. 2023 2024 2025 &middot; Daily. S ... <b>Today</b> 1 *2 3 4 5 6 7 8 9 10 11 <b>12</b> 13 14 15 16 17 18 19 20 21 22 23 24 25 26&nbsp;...",
+            "formattedUrl": "https://www.accuweather.com/en/hk/hong-kong/1123655/august.../112365...",
+            "htmlFormattedUrl": "https://www.accuweather.com/en/hk/<b>hong</b>-<b>kong</b>/1123655/<b>august</b>.../112365...",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuL3Cl1PGFBllvcwU4b4wHJPPefT6kVDqeEeO7j9LjXQpxbXqUOc2DOh1U&s",
+                        "width": "225",
+                        "height": "225"
+                    }
+                ],
+                "postaladdress": [
+                    {
+                        "addresslocality": "Kowloon",
+                        "addressregion": "Kowloon City"
+                    },
+                    {
+                        "addresslocality": "Sha Tin",
+                        "addressregion": "Sha Tin"
+                    },
+                    {
+                        "addresslocality": "Shenzhen",
+                        "addressregion": "Guangdong"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "og:image": "https://www.accuweather.com/images/logos/aw-logo-og-meta.png",
+                        "twitter:app:url:iphone": "https://apps.apple.com/US/app/id300048137?mt=8",
+                        "twitter:app:id:googleplay": "com.accuweather.android",
+                        "twitter:card": "summary",
+                        "twitter:app:url:ipad": "https://apps.apple.com/US/app/id300048137?mt=8",
+                        "twitter:app:name:googleplay": "AccuWeather Winter weather alerts & forecast radar",
+                        "twitter:app:id:iphone": "U7D6TVQ9TT.com.yourcompany.TestWithCustomTabs",
+                        "og:description": "Get the monthly weather forecast for Hong Kong, Sha Tin, Hong Kong, including daily high/low, historical averages, to help you plan ahead.",
+                        "twitter:creator": "https://twitter.com/accuweather",
+                        "og:image:secure_url": "https://www.accuweather.com/images/logos/aw-logo-og-meta.png",
+                        "twitter:image": "https://www.accuweather.com/images/logos/aw-logo-og-meta.png",
+                        "twitter:text:title": "Hong Kong, Sha Tin, Hong Kong Monthly Weather | AccuWeather",
+                        "twitter:site": "https://twitter.com/accuweather",
+                        "fb:profile_id": "AccuWeather",
+                        "og:type": "website",
+                        "twitter:title": "Hong Kong, Sha Tin, Hong Kong Monthly Weather | AccuWeather",
+                        "twitter:site:id": "https://twitter.com/accuweather",
+                        "og:image:url": "https://www.accuweather.com/images/logos/aw-logo-og-meta.png",
+                        "og:title": "Hong Kong, Sha Tin, Hong Kong Monthly Weather | AccuWeather",
+                        "twitter:app:id:ipad": "U7D6TVQ9TT.com.yourcompany.TestWithCustomTabs",
+                        "fb:pages": "71781612888",
+                        "site_name": "AccuWeather",
+                        "referrer": "origin",
+                        "fb:app_id": "132437483467956",
+                        "twitter:app:url:googleplay": "https://play.google.com/store/apps/details?id=com.accuweather.android",
+                        "twitter:creator:id": "https://twitter.com/accuweather",
+                        "twitter:app:name:ipad": "AccuWeather: Weather Tracker",
+                        "viewport": "width=device-width, initial-scale=1.0",
+                        "twitter:description": "Get the monthly weather forecast for Hong Kong, Sha Tin, Hong Kong, including daily high/low, historical averages, to help you plan ahead.",
+                        "og:url": "https://www.accuweather.com/en/hk/hong-kong/1123655/august-weather/1123655",
+                        "twitter:app:name:iphone": "AccuWeather: Weather Tracker"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://www.accuweather.com/images/logos/aw-logo-og-meta.png"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Hong Kong Economy - Hong Kong Economic Situation - Archive of ...",
+            "htmlTitle": "<b>Hong Kong</b> Economy - <b>Hong Kong</b> Economic Situation - Archive of ...",
+            "link": "https://www.hkeconomy.gov.hk/en/situation/forecasts/index.htm",
+            "displayLink": "www.hkeconomy.gov.hk",
+            "snippet": "Hong Kong Economy, Hong Kong Economic Situation, Archive of Press Release and Economic Forecasts. ... Press release (12 August 2022) (PDF); Press conference ...",
+            "htmlSnippet": "<b>Hong Kong</b> Economy, <b>Hong Kong</b> Economic Situation, Archive of Press Release and Economic <b>Forecasts</b>. ... Press release (<b>12 August 2022</b>) (PDF); Press conference&nbsp;...",
+            "formattedUrl": "https://www.hkeconomy.gov.hk/en/situation/forecasts/index.htm",
+            "htmlFormattedUrl": "https://www.hkeconomy.gov.hk/en/situation/<b>forecast</b>s/index.htm",
+            "pagemap": {
+                "metatags": [
+                    {
+                        "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "The Weather of August 2023｜Hong Kong Observatory(HKO ...",
+            "htmlTitle": "The <b>Weather</b> of <b>August</b> 2023｜<b>Hong Kong</b> Observatory(HKO ...",
+            "link": "https://www.hko.gov.hk/en/wxinfo/pastwx/mws2023/mws202308.htm",
+            "displayLink": "www.hko.gov.hk",
+            "snippet": "Sep 4, 2023 ... The maximum temperature at the Observatory soared to 35.1 degrees that afternoon, the highest of the month. With the prevalence of a ...",
+            "htmlSnippet": "Sep 4, 2023 <b>...</b> The maximum <b>temperature</b> at the Observatory soared to 35.1 degrees that afternoon, the highest of the month. With the prevalence of a&nbsp;...",
+            "formattedUrl": "https://www.hko.gov.hk/en/wxinfo/pastwx/mws2023/mws202308.htm",
+            "htmlFormattedUrl": "https://www.hko.gov.hk/en/wxinfo/pastwx/mws2023/mws202308.htm",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVBDfy900hrc8im65gJCmRGLjtRqndNzTehs6Cf3SvlEW2i-noDUrr&s",
+                        "width": "100",
+                        "height": "100"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "recordid": "2023083114175833272",
+                        "fb:app_id": "468280339992518",
+                        "og:type": "website",
+                        "og:image:width": "600",
+                        "viewport": "width=device-width, initial-scale=1.0",
+                        "og:title": "The Weather of August 2023",
+                        "og:image:height": "314",
+                        "lang": "en",
+                        "og:url": "https://www.hko.gov.hk/en/wxinfo/pastwx/mws2023/mws202308.htm",
+                        "og:description": "4 September 2023 Mainly attributing to the warmer than normal sea surface temperature over the northern part of the South China Sea and a stronger than usual southwesterly flow in"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://www.hko.gov.hk/images/follow/x_black_100px.png"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Hong Kong, Hong Kong 14 day weather forecast",
+            "htmlTitle": "<b>Hong Kong</b>, <b>Hong Kong</b> 14 day <b>weather forecast</b>",
+            "link": "https://www.timeanddate.com/weather/hong-kong/hong-kong/ext",
+            "displayLink": "www.timeanddate.com",
+            "snippet": "Jul 29 – Aug 4Aug 5 – Aug 11Aug 12 – Aug 18. See weather overview. 2 Week Extended Forecast in Hong Kong, Hong Kong. Scroll right to see more. Conditions ...",
+            "htmlSnippet": "Jul 29 – Aug 4Aug 5 – Aug 11Aug <b>12</b> – <b>Aug</b> 18. See <b>weather</b> overview. 2 Week Extended <b>Forecast</b> in <b>Hong Kong</b>, <b>Hong Kong</b>. Scroll right to see more. Conditions&nbsp;...",
+            "formattedUrl": "https://www.timeanddate.com/weather/hong-kong/hong-kong/ext",
+            "htmlFormattedUrl": "https://www.timeanddate.com/weather/<b>hong</b>-<b>kong</b>/<b>hong</b>-<b>kong</b>/ext",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo88bgpIPBcUZzENhDd0osdStDE4BZL-U6dxy0hR1IxKhr_7HXMQ-e_UQF&s",
+                        "width": "306",
+                        "height": "165"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "og:image": "https://www.timeanddate.com/scripts/cityog.php?title=14-Day%20Weather%20Forecast%20for&tint=0x007b7a&city=Hong%20Kong&country=Hong%20Kong&image=hong-kong1",
+                        "og:image:width": "1366",
+                        "og:type": "website",
+                        "viewport": "width=device-width,initial-scale=1.0",
+                        "og:image:height": "768"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://www.timeanddate.com/scripts/cityog.php?title=14-Day%20Weather%20Forecast%20for&tint=0x007b7a&city=Hong%20Kong&country=Hong%20Kong&image=hong-kong1"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Hong Kong Air Traffic: Explanation and Prediction based on Sparse ...",
+            "htmlTitle": "<b>Hong Kong</b> Air Traffic: Explanation and <b>Prediction</b> based on Sparse ...",
+            "link": "https://europepmc.org/article/ppr/ppr383158",
+            "displayLink": "europepmc.org",
+            "snippet": "Hong Kong Air Traffic: Explanation and Prediction based on Sparse Seasonal ARIMA Model. Chai S. Preprint from arXiv, 12 Aug 2021. PPR: PPR383158.",
+            "htmlSnippet": "<b>Hong Kong</b> Air Traffic: Explanation and <b>Prediction</b> based on Sparse Seasonal ARIMA Model. Chai S. Preprint from arXiv, <b>12 Aug 2021</b>. PPR: PPR383158.",
+            "formattedUrl": "https://europepmc.org/article/ppr/ppr383158",
+            "htmlFormattedUrl": "https://europepmc.org/article/ppr/ppr383158",
+            "pagemap": {
+                "imageobject": [
+                    {
+                        "url": "http://europepmc.org/template/images/epmc-logo-single.png"
+                    },
+                    {
+                        "url": "http://europepmc.org/template/images/epmc-logo-single.png"
+                    }
+                ],
+                "person": [
+                    {
+                        "name": "Chai S"
+                    }
+                ],
+                "book": [
+                    {
+                        "name": "Hong Kong Air Traffic: Explanation and Prediction based on Sparse Seasonal ARIMA Model",
+                        "description": "The monthly air traffic of a city is a time series with an obvious seasonal pattern, and is closely related to the economic situation and social environment of the city. In Hong Kong, for example,...",
+                        "datepublished": "12 Aug 2021"
+                    }
+                ],
+                "organization": [
+                    {
+                        "name": "Europe PMC"
+                    },
+                    {
+                        "name": "arXiv"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "owner": "Europe PMC",
+                        "citation_publication_date": "2021/08/12",
+                        "theme-color": "#666",
+                        "citation_title": "Hong Kong Air Traffic: Explanation and Prediction based on Sparse Seasonal ARIMA Model",
+                        "viewport": "width=device-width",
+                        "author": "Europe PMC",
+                        "citation_language": "English",
+                        "citation_fulltext_html_url": "https://europepmc.org/article/PPR/PPR383158",
+                        "citation_author": "Chai S",
+                        "citation_pdf_url": "https://europepmc.org/api/fulltextRepo?pprId=PPR383158&type=FILE&fileName=EMS132986-pdf.pdf&mimeType=application/pdf",
+                        "citation_abstract_html_url": "https://europepmc.org/article/ppr/ppr383158?client=bot"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "What is the typical weather in Hong Kong during August? What ...",
+            "htmlTitle": "What is the typical <b>weather</b> in <b>Hong Kong</b> during <b>August</b>? What ...",
+            "link": "https://www.quora.com/What-is-the-typical-weather-in-Hong-Kong-during-August-What-should-a-first-time-visitor-expect-and-prepare-for-in-terms-of-weather",
+            "displayLink": "www.quora.com",
+            "snippet": "Feb 7, 2024 ... In August, Hong Kong experiences hot and humid weather with temperatures averaging around 28-32°C (82-89°F). Expect frequent rain and occasional ...",
+            "htmlSnippet": "Feb 7, 2024 <b>...</b> In <b>August</b>, <b>Hong Kong</b> experiences hot and humid <b>weather</b> with <b>temperatures</b> averaging around 28-32°C (82-89°F). Expect frequent rain and occasional&nbsp;...",
+            "formattedUrl": "https://www.quora.com/What-is-the-typical-weather-in-Hong-Kong-during...",
+            "htmlFormattedUrl": "https://www.quora.com/What-is-the-typical-weather-in-<b>Hong</b>-<b>Kong</b>-during...",
+            "pagemap": {
+                "metatags": [
+                    {
+                        "al:android:url": "intent://www.quora.com/What-is-the-typical-weather-in-Hong-Kong-during-August-What-should-a-first-time-visitor-expect-and-prepare-for-in-terms-of-weather#Intent;scheme=qhttp;package=com.quora.android;S.market_referrer=launch_url=https%3A%2F%2Fwww.quora.com%2FWhat-is-the-typical-weather-in-Hong-Kong-during-August-What-should-a-first-time-visitor-expect-and-prepare-for-in-terms-of-weather&logging_data=uid%3DNone;end",
+                        "theme-color": "#b92b27",
+                        "viewport": "initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, minimum-scale=1, viewport-fit=cover",
+                        "al:android:package": "com.quora.android",
+                        "fb:pages": "255232486973",
+                        "twitter:widgets:theme": "light"
+                    }
+                ],
+                "QAPage": [
+                    {}
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Tide Times and Tide Chart for Hong Kong",
+            "htmlTitle": "Tide Times and Tide Chart for <b>Hong Kong</b>",
+            "link": "https://www.tide-forecast.com/locations/Hong-Kong-China/tides/latest",
+            "displayLink": "www.tide-forecast.com",
+            "snippet": "The predicted tide times today on Saturday 03 August 2024 for Hong Kong are ... Monday 12 August 2024. Tide tide state, Time (HKT)& Date, Height. High Tide ...",
+            "htmlSnippet": "The <b>predicted</b> tide times <b>today</b> on Saturday 03 August 2024 for <b>Hong Kong</b> are ... <b>Monday 12 August 2024</b>. Tide tide state, Time (HKT)&amp; Date, Height. High Tide&nbsp;...",
+            "formattedUrl": "https://www.tide-forecast.com/locations/Hong-Kong-China/tides/latest",
+            "htmlFormattedUrl": "https://www.tide-<b>forecast</b>.com/locations/<b>Hong</b>-<b>Kong</b>-China/tides/latest",
+            "pagemap": {
+                "metatags": [
+                    {
+                        "msapplication-tilecolor": "#4a81b5",
+                        "theme-color": "#4a81b5",
+                        "viewport": "width=device-width, initial-scale=1"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Observing Water Vapor Variability During Three Super Typhoon ...",
+            "htmlTitle": "Observing Water Vapor Variability During Three Super Typhoon ...",
+            "link": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019JD032318",
+            "displayLink": "agupubs.onlinelibrary.wiley.com",
+            "snippet": "Jun 29, 2020 ... Hong Kong suffers from extreme weather events such as heavy rainfalls and strong typhoons. ... Hong Kong from 12 to 15 August 2013. Based on the ...",
+            "htmlSnippet": "Jun 29, 2020 <b>...</b> <b>Hong Kong</b> suffers from extreme <b>weather</b> events such as heavy rainfalls and strong typhoons. ... <b>Hong Kong</b> from <b>12</b> to 15 August 2013. Based on the&nbsp;...",
+            "formattedUrl": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019JD032318",
+            "htmlFormattedUrl": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019JD032318",
+            "pagemap": {
+                "metatags": [
+                    {
+                        "citation_keywords": "Global Positioning System (GPS)",
+                        "og:image": "https://agupubs.onlinelibrary.wiley.com/cms/asset/f332c424-d60b-431d-801b-00897df17fd0/jgrd.v125.15.cover.jpg?trick=1706929089209",
+                        "citation_publication_date": "2020/08/16",
+                        "citation_title": "Observing Water Vapor Variability During Three Super Typhoon Events in Hong Kong Based on GPS Water Vapor Tomographic Modeling Technique",
+                        "citation_author_institution": "Department of Surveying and Geo-informatics Hong Kong Polytechnic University Kowloon Hong Kong",
+                        "og:site_name": "AGU Journals",
+                        "citation_publisher": "John Wiley & Sons, Ltd",
+                        "citation_journal_title": "Journal of Geophysical Research: Atmospheres",
+                        "og:description": "<em>Journal of Geophysical Research: Atmospheres</em> is an AGU journal publishing original research articles that advance and improve the understanding of atmospheric properties and processes.",
+                        "twitter:image": "https://agupubs.onlinelibrary.wiley.com/cms/asset/f332c424-d60b-431d-801b-00897df17fd0/jgrd.v125.15.cover.jpg?trick=1706929089209",
+                        "citation_online_date": "2020/07/29",
+                        "citation_issn": "2169-8996",
+                        "citation_language": "en",
+                        "citation_fulltext_html_url": "https://onlinelibrary.wiley.com/doi/full/10.1029/2019JD032318",
+                        "citation_pdf_url": "https://onlinelibrary.wiley.com/doi/pdf/10.1029/2019JD032318",
+                        "og:type": "Article",
+                        "pbcontext": ";page:string:Article/Chapter View;ctype:string:Journal Content;requestedJournal:journal:21698996;website:website:agupubs;journal:journal:21562202d;issue:issue:doi\\:10.1002/jgrd.v125.15;wgroup:string:Publication Websites;pageGroup:string:Publication Pages;subPage:string:Full Text;article:article:doi\\:10.1029/2019JD032318",
+                        "og:title": "Observing Water Vapor Variability During Three Super Typhoon Events in Hong Kong Based on GPS Water Vapor Tomographic Modeling Technique",
+                        "citation_author": "Mingchen Zhu",
+                        "citation_abstract_html_url": "https://onlinelibrary.wiley.com/doi/abs/10.1029/2019JD032318",
+                        "citation_issue": "15",
+                        "citation_firstpage": "e2019JD032318",
+                        "referrer": "origin-when-cross-origin",
+                        "viewport": "width=device-width,initial-scale=1",
+                        "citation_doi": "10.1029/2019JD032318",
+                        "dc.identifier": "10.1029/2019JD032318",
+                        "citation_volume": "125",
+                        "og:url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019JD032318",
+                        "article_references": "Zhu, M.,  Liu, Z., &  Hu, W. (2020). Observing water vapor variability during three super typhoon events in Hong Kong based on GPS water vapor tomographic modeling technique. Journal of Geophysical Research: Atmospheres,  125, e2019JD032318. https://doi.org/10.1029/2019JD032318"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://agupubs.onlinelibrary.wiley.com/cms/asset/f332c424-d60b-431d-801b-00897df17fd0/jgrd.v125.15.cover.jpg?trick=1706929089209"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "metarea xi",
+            "htmlTitle": "metarea xi",
+            "link": "https://wwmiws.wmo.int/index.php/metareas/display/11",
+            "displayLink": "wwmiws.wmo.int",
+            "snippet": "HIGH SEAS FORECAST HONG KONG CHINA. Friday, 02-Aug-2024 14:13:25 UTC. HIGH ... Friday, 02-Aug-2024 12:31:08 UTC. Japan Moji (34°01' N - 130°56' E) [H] ...",
+            "htmlSnippet": "HIGH SEAS <b>FORECAST HONG KONG</b> CHINA. Friday, 02-<b>Aug</b>-2024 14:13:25 UTC. HIGH ... Friday, 02-<b>Aug</b>-2024 <b>12</b>:31:08 UTC. Japan Moji (34°01&#39; N - 130°56&#39; E) [H]&nbsp;...",
+            "formattedUrl": "https://wwmiws.wmo.int/index.php/metareas/display/11",
+            "htmlFormattedUrl": "https://wwmiws.wmo.int/index.php/metareas/display/11",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy7WVRp9WIjDYsBVVvM5Pgr0FfvuirD9e4XjvBLZNMweG5IXuiCpAWUuMf&s",
+                        "width": "367",
+                        "height": "137"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "viewport": "width=device-width, initial-scale=1.0"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://wwmiws.wmo.int/assets/img/wmo.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Hong Kong, People's Republic Of China Weather Conditions ...",
+            "htmlTitle": "<b>Hong Kong</b>, People&#39;s Republic Of China <b>Weather</b> Conditions ...",
+            "link": "https://www.wunderground.com/weather/hk/fu-tei-wan/22.29999924,113.93000031",
+            "displayLink": "www.wunderground.com",
+            "snippet": "Hong Kong Weather Forecasts. Weather Underground provides local & long-range weather ... Aug 4. New Moon. icon. Aug 12. Waxing Gibbous. icon. Aug 19. Full Moon.",
+            "htmlSnippet": "<b>Hong Kong Weather Forecasts</b>. <b>Weather</b> Underground provides local &amp; long-range <b>weather</b> ... Aug 4. New Moon. icon. <b>Aug 12</b>. Waxing Gibbous. icon. Aug 19. Full Moon.",
+            "formattedUrl": "https://www.wunderground.com/weather/hk/.../22.29999924,113.9300003...",
+            "htmlFormattedUrl": "https://www.wunderground.com/weather/hk/.../22.29999924,113.9300003...",
+            "pagemap": {
+                "metatags": [
+                    {
+                        "theme-color": "#1976d2",
+                        "viewport": "width=device-width, initial-scale=1"
+                    }
+                ]
+            }
+        }
+    ]
+}
