@@ -10,7 +10,7 @@ use url::Url;
 
 use crate::constants::config::DISALLOWED_URLS;
 use crate::constants::utility::log_error;
-use crate::models::google_models::{SearchResponse, SearchResult};
+use crate::models::google_search_models::{SearchResponse, SearchResult};
 
 pub struct WebScraping;
 

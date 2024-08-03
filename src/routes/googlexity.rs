@@ -13,10 +13,8 @@ use crate::{
         },
         utility::{log_error, log_query},
     },
-    models::google_models::{
-        AiCompletionRequest, GoogleAiGenerateContentResponse, SearchRequest, SearchResponse,
-        SearchResult,
-    },
+    models::google_ai_models::{AiCompletionRequest, GoogleAiGenerateContentResponse},
+    models::google_search_models::{SearchRequest, SearchResponse, SearchResult},
 };
 
 pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn Error>> {
