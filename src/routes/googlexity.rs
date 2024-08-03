@@ -7,6 +7,7 @@ use scraper::{Html, Selector};
 use serde_json::json;
 use std::sync::Arc;
 use std::{error::Error, fs, path::Path, time::Instant};
+use url::Url;
 
 use crate::constants::config::{DISALLOWED_URLS, GEMINI_MODEL_FLASH, GEMINI_MODEL_PRO};
 use crate::{
@@ -114,7 +115,6 @@ pub async fn scrape_website(
 
     let end_time = Instant::now();
     let duration = end_time.duration_since(start_time);
-    println!("Scraped content: {}", cleaned_text);
     println!("Scraping time taken for {}: {:?}", url, duration);
     Ok(cleaned_text)
 }
@@ -150,6 +150,19 @@ fn clean_text(input: &str) -> String {
     cleaned_text
 }
 
+fn normalize_url(url: &str) -> String {
+    match Url::parse(url) {
+        Ok(mut parsed_url) => {
+            parsed_url.set_scheme("https").unwrap_or(());
+            parsed_url.set_path("");
+            parsed_url.set_query(None);
+            parsed_url.set_fragment(None);
+            parsed_url.to_string().trim_end_matches('/').to_string()
+        }
+        Err(_) => url.to_string(),
+    }
+}
+
 pub async fn retrieve_all_website_text_content(body: Vec<SearchResult>) -> Vec<SearchResult> {
     let start_time = Instant::now();
     let client = Arc::new(reqwest::Client::new());
@@ -159,7 +172,12 @@ pub async fn retrieve_all_website_text_content(body: Vec<SearchResult>) -> Vec<S
             let client = Arc::clone(&client);
             async move {
                 let cloned_link = item.link.clone();
-                if DISALLOWED_URLS.contains(&cloned_link.as_str()) {
+
+                let normalized_url = normalize_url(&cloned_link);
+                println!("Normalized URL: {}", normalized_url);
+
+                if DISALLOWED_URLS.contains(&normalized_url.as_str()) {
+                    println!("URL {} is disallowed, skipping", normalized_url);
                     return item;
                 }
                 match scrape_website(&cloned_link, &client).await {
@@ -167,7 +185,10 @@ pub async fn retrieve_all_website_text_content(body: Vec<SearchResult>) -> Vec<S
                         item.website_text_content = Some(content);
                     }
                     Err(e) => {
-                        log_error(&format!("Failed to scrape website {}: {}", cloned_link, e));
+                        log_error(&format!(
+                            "Failed to scrape website {}: {}",
+                            normalized_url, e
+                        ));
                     }
                 }
                 item
@@ -302,10 +323,7 @@ pub async fn google_ai_completion(
     );
 
     let function = "generateContent";
-    let model = body
-        .model
-        .clone()
-        .unwrap_or("gemini-1.5-flash-latest".to_string());
+    let model = body.model.clone().unwrap_or(GEMINI_MODEL_FLASH.to_string());
 
     let google_ai_completion_response = match client
         .post(format!(

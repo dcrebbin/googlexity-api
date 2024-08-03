@@ -63,4 +63,7 @@ pub const DISALLOWED_URLS: &[&str] = &[
     "https://www.reddit.com",
     "https://x.com",
     "https://www.twitter.com",
+    "https://www.instagram.com",
+    "https://www.youtube.com",
+    "https://www.tiktok.com",
 ];
