@@ -73,6 +73,9 @@ Body:
      // (Optional: defaults to infinite)
      // The maximum number of search results to use in the
      // context of the last AI query
+    "optimize_query": "", 
+     // (Optional: defaults to true)
+     // Whether to optimize the query for search engines. 
     "max_optimizations": "", 
      // (Optional: defaults to infinite)
      // The maximum number of optimized queries that will be used 

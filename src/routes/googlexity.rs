@@ -20,12 +20,15 @@ use crate::{
 pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn Error>> {
     let start_time = Instant::now();
 
-    let optimised_search_response =
+    let optimised_search_response = if body.optimize_query.unwrap_or(true) {
         google_ai_completion(actix_web::web::Json(AiCompletionRequest {
             query: SEARCH_QUERY_OPTIMISATION_PROMPT.to_string() + &body.query.clone(),
             model: Some(GEMINI_MODEL_FLASH.to_string()),
         }))
-        .await?;
+        .await?
+    } else {
+        body.query.clone()
+    };
 
     log_query(&format!(
         "Optimised search response: {}",
