@@ -20,14 +20,16 @@ use crate::{
 pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn Error>> {
     let start_time = Instant::now();
 
+    let query = body.query.clone();
+
     let optimised_search_response = if body.optimize_query.unwrap_or(true) {
         google_ai_completion(actix_web::web::Json(AiCompletionRequest {
-            query: SEARCH_QUERY_OPTIMISATION_PROMPT.to_string() + &body.query.clone(),
+            query: SEARCH_QUERY_OPTIMISATION_PROMPT.to_string() + &query,
             model: Some(GEMINI_MODEL_FLASH.to_string()),
         }))
         .await?
     } else {
-        body.query.clone()
+        query
     };
 
     log_query(&format!(
@@ -53,10 +55,8 @@ pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn E
     log_query(&format!("Split search queries: {:?}", split_search_queries));
 
     let mut search_results: Vec<SearchResult> = Vec::new();
-
     for query in split_search_queries {
         let search_items = google_search(&query).await?;
-
         search_results.extend(search_items);
     }
 
@@ -66,6 +66,12 @@ pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn E
         }
     }
 
+    let search_results_text = serde_json::to_string(&search_results)?;
+    println!(
+        "Initial search results content length: {}",
+        search_results_text.len()
+    );
+
     let updated_search_results = if body.depthfull_search.unwrap_or(false) {
         WebScraping::retrieve_all_website_text_content(search_results).await
     } else {
@@ -73,6 +79,13 @@ pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn E
     };
 
     let stringified_search_results = serde_json::to_string(&updated_search_results)?;
+    if body.depthfull_search.unwrap_or(false) {
+        let updated_search_results_length = stringified_search_results.len();
+        println!(
+            "Updated search results content length: {}",
+            updated_search_results_length
+        );
+    }
 
     let ai_request = AiCompletionRequest {
         query: MOST_RELEVANT_CONTENT_PROMPT.to_string()
@@ -87,6 +100,9 @@ pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn E
         model: Some(body.model.clone().unwrap_or(GEMINI_MODEL_PRO.to_string())),
     };
 
+    let ai_request_length = ai_request.query.len();
+    println!("AI request length: {}", ai_request_length);
+
     let most_relevant_search_results =
         google_ai_completion(actix_web::web::Json(ai_request)).await?;
 
@@ -100,7 +116,6 @@ pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn E
 pub async fn google_search(query: &str) -> Result<Vec<SearchResult>, Box<dyn Error>> {
     let search_api_key = std::env::var("SEARCH_API_KEY").unwrap();
     let search_engine_id = std::env::var("SEARCH_ENGINE_ID").unwrap();
-
     let start_time = Instant::now();
 
     let client = reqwest::Client::new();
