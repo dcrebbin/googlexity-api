@@ -4,6 +4,7 @@ use std::collections::HashMap;
 #[derive(Debug, Serialize, Deserialize)]
 pub struct SearchRequest {
     pub query: String,
+    pub model: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

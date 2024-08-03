@@ -1,17 +1,18 @@
 use actix_web::{web::Json, HttpResponse, Result};
-use futures_util::future::join_all;
+use futures_util::stream::{self, StreamExt};
 use regex::Regex;
 use reqwest::header::{HeaderMap, HeaderName, HeaderValue};
 use reqwest::Client;
 use scraper::{Html, Selector};
 use serde_json::json;
+use std::sync::Arc;
 use std::{error::Error, fs, path::Path, time::Instant};
 
-use crate::constants::config::DISALLOWED_URLS;
+use crate::constants::config::{DISALLOWED_URLS, GEMINI_MODEL_FLASH, GEMINI_MODEL_PRO};
 use crate::{
     constants::{
         config::{
-            CUSTOM_FORMATTING_PROMPT, GEMINI_MODEL, MOST_RELEVANT_CONTENT_PROMPT,
+            CUSTOM_FORMATTING_PROMPT, MOST_RELEVANT_CONTENT_PROMPT,
             SEARCH_QUERY_OPTIMISATION_PROMPT,
         },
         utility::{log_error, log_query},
@@ -74,13 +75,11 @@ pub async fn retrieve_relevant_search_data_mock() -> Result<HttpResponse, actix_
     Ok(HttpResponse::Ok().json(updated_search_items))
 }
 
-pub async fn scrape_website(url: &str) -> Result<String, Box<dyn Error + Send + Sync>> {
-    if DISALLOWED_URLS.contains(&url) {
-        return Ok(String::new());
-    }
-
+pub async fn scrape_website(
+    url: &str,
+    client: &Client,
+) -> Result<String, Box<dyn Error + Send + Sync>> {
     let start_time = Instant::now();
-    let client = Client::new();
     let mut headers = HeaderMap::new();
     headers.insert(
         "User-Agent".parse::<HeaderName>().unwrap(),
@@ -153,21 +152,30 @@ fn clean_text(input: &str) -> String {
 
 pub async fn retrieve_all_website_text_content(body: Vec<SearchResult>) -> Vec<SearchResult> {
     let start_time = Instant::now();
+    let client = Arc::new(reqwest::Client::new());
 
-    let futures = body.into_iter().map(|mut item| async move {
-        let cloned_link = item.link.clone();
-        match scrape_website(&cloned_link).await {
-            Ok(content) => {
-                item.website_text_content = Some(content);
+    let updated_search_results = stream::iter(body)
+        .map(|mut item| {
+            let client = Arc::clone(&client);
+            async move {
+                let cloned_link = item.link.clone();
+                if DISALLOWED_URLS.contains(&cloned_link.as_str()) {
+                    return item;
+                }
+                match scrape_website(&cloned_link, &client).await {
+                    Ok(content) => {
+                        item.website_text_content = Some(content);
+                    }
+                    Err(e) => {
+                        log_error(&format!("Failed to scrape website {}: {}", cloned_link, e));
+                    }
+                }
+                item
             }
-            Err(e) => {
-                log_error(&format!("Failed to scrape website: {}", e));
-            }
-        }
-        item
-    });
-
-    let updated_search_results = join_all(futures).await;
+        })
+        .buffer_unordered(10) // Process up to 10 requests concurrently
+        .collect::<Vec<_>>()
+        .await;
 
     let end_time = Instant::now();
     let duration = end_time.duration_since(start_time);
@@ -182,7 +190,7 @@ pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn E
     let optimised_search_response =
         google_ai_completion(actix_web::web::Json(AiCompletionRequest {
             query: SEARCH_QUERY_OPTIMISATION_PROMPT.to_string() + &body.query.clone(),
-            model: Some(GEMINI_MODEL.to_string()),
+            model: Some(GEMINI_MODEL_FLASH.to_string()),
         }))
         .await?;
 
@@ -191,14 +199,17 @@ pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn E
         optimised_search_response
     ));
 
-    let split_search_queries = if optimised_search_response.contains(';') {
-        optimised_search_response
-            .split(';')
-            .map(|s| s.trim().to_string())
-            .collect::<Vec<String>>()
-    } else {
-        vec![optimised_search_response.trim().to_string()]
-    };
+    let split_search_queries: Vec<String> = optimised_search_response
+        .split(';')
+        .filter_map(|s| {
+            let trimmed = s.trim();
+            if !trimmed.is_empty() {
+                Some(trimmed.to_string())
+            } else {
+                None
+            }
+        })
+        .collect();
 
     log_query(&format!("Split search queries: {:?}", split_search_queries));
 
@@ -221,7 +232,7 @@ pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn E
             + &body.query.clone()
             + "\n\nSearch Results:\n"
             + &stringified_search_results,
-        model: Some(GEMINI_MODEL.to_string()),
+        model: Some(body.model.clone().unwrap_or(GEMINI_MODEL_PRO.to_string())),
     };
 
     let most_relevant_search_results =
