@@ -1,10 +1,13 @@
-use actix_web::{web::Json, HttpResponse, Result};
+use actix_web::{body::MessageBody, web::Json, HttpResponse, Result};
 use reqwest::header::{HeaderMap, HeaderName, HeaderValue};
 use serde_json::json;
 use std::error::Error;
 
 use crate::{
-    constants::utility::log_error,
+    constants::{
+        config::{GEMINI_MODEL, MOST_RELEVANT_CONTENT_PROMPT, SEARCH_QUERY_OPTIMISATION_PROMPT},
+        utility::log_error,
+    },
     models::google_models::{
         AiCompletionRequest, GoogleAiGenerateContentResponse, SearchRequest, SearchResponse,
         SearchResult,
@@ -12,12 +15,41 @@ use crate::{
 };
 
 pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn Error>> {
-    let search_items = google_search(&body.query).await;
+    let optimised_search_response =
+        google_ai_completion(actix_web::web::Json(AiCompletionRequest {
+            query: SEARCH_QUERY_OPTIMISATION_PROMPT.to_string() + &body.query.clone(),
+            model: Some(GEMINI_MODEL.to_string()),
+        }))
+        .await?;
 
-    match search_items {
-        Ok(search_items) => Ok(HttpResponse::Ok().json(search_items)),
-        Err(e) => Ok(HttpResponse::InternalServerError().body(e.to_string())),
+    let split_search_queries = optimised_search_response
+        .to_string()
+        .split(";")
+        .map(|s| s.to_string())
+        .collect::<Vec<String>>();
+
+    let mut search_results: Vec<SearchResult> = Vec::new();
+
+    for query in split_search_queries {
+        let search_items = google_search(&query).await?;
+
+        search_results.extend(search_items);
     }
+
+    let stringified_search_results = serde_json::to_string(&search_results)?;
+
+    let ai_request = AiCompletionRequest {
+        query: MOST_RELEVANT_CONTENT_PROMPT.to_string()
+            + &body.query.clone()
+            + "\n\nSearch Results:\n"
+            + &stringified_search_results,
+        model: Some(GEMINI_MODEL.to_string()),
+    };
+
+    let most_relevant_search_results =
+        google_ai_completion(actix_web::web::Json(ai_request)).await?;
+
+    Ok(HttpResponse::Ok().body(most_relevant_search_results))
 }
 
 pub async fn google_search(query: &str) -> Result<Vec<SearchResult>, Box<dyn Error>> {
@@ -60,7 +92,7 @@ pub async fn google_search(query: &str) -> Result<Vec<SearchResult>, Box<dyn Err
 
 pub async fn google_ai_completion(
     body: Json<AiCompletionRequest>,
-) -> Result<HttpResponse, Box<dyn Error>> {
+) -> Result<String, Box<dyn Error>> {
     let gemini_api_key = std::env::var("GEMINI_API_KEY").unwrap();
     let client = reqwest::Client::new();
     let mut headers = HeaderMap::new();
@@ -101,15 +133,15 @@ pub async fn google_ai_completion(
         Ok(response) => response,
         Err(e) => {
             log_error(&format!("Request failed: {}", e));
-            return Ok(HttpResponse::InternalServerError().body(format!("Request failed: {}", e)));
+            return Ok(format!("Request failed: {}", e));
         }
     };
 
     if !google_ai_completion_response.status().is_success() {
-        return Ok(HttpResponse::InternalServerError().body(format!(
+        return Ok(format!(
             "HTTP error! status: {}",
             google_ai_completion_response.status()
-        )));
+        ));
     }
     let google_ai_completion_response_json: GoogleAiGenerateContentResponse =
         match google_ai_completion_response
@@ -119,8 +151,7 @@ pub async fn google_ai_completion(
             Ok(response) => response,
             Err(e) => {
                 log_error(&format!("Failed to parse JSON response: {}", e));
-                return Ok(HttpResponse::InternalServerError()
-                    .body(format!("Failed to parse JSON response: {}", e)));
+                return Ok(format!("Failed to parse JSON response: {}", e));
             }
         };
 
@@ -129,5 +160,5 @@ pub async fn google_ai_completion(
         .parts[0]
         .text;
 
-    Ok(HttpResponse::Ok().body(content.to_string()))
+    Ok(content.to_string())
 }
