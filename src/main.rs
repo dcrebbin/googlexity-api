@@ -39,6 +39,10 @@ async fn main() -> std::io::Result<()> {
                     web::get().to(routes::test::test_google_auth_route),
                 );
                 r.route("/search", web::post().to(routes::googlexity::search));
+                r.route(
+                    "/generate-content",
+                    web::post().to(routes::googlexity::google_ai_completion),
+                );
             }))
     })
     .bind(("0.0.0.0", port))?
