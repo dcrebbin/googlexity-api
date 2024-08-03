@@ -3,11 +3,11 @@ pub fn is_development() -> bool {
 }
 
 pub fn log_query(query: &str) {
-    println!("{:?}", query);
+    if is_development() {
+        println!("{:?}", query);
+    }
 }
 
 pub fn log_error(error: &str) {
-    if is_development() {
-        eprintln!("{:?}", error);
-    }
+    eprintln!("{:?}", error);
 }
