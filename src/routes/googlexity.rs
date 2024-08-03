@@ -220,17 +220,14 @@ pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn E
         optimised_search_response
     ));
 
-    let split_search_queries: Vec<String> = optimised_search_response
-        .split(';')
-        .filter_map(|s| {
-            let trimmed = s.trim();
-            if !trimmed.is_empty() {
-                Some(trimmed.to_string())
-            } else {
-                None
-            }
-        })
-        .collect();
+    let split_search_queries: Vec<String> = if optimised_search_response.contains(";") {
+        optimised_search_response
+            .split(';')
+            .map(|s| s.replace("\n", ""))
+            .collect()
+    } else {
+        vec![optimised_search_response]
+    };
 
     log_query(&format!("Split search queries: {:?}", split_search_queries));
 
