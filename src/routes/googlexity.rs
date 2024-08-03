@@ -21,7 +21,7 @@ use crate::{
     },
 };
 
-pub async fn retrieve_relevant_search_data() -> Result<HttpResponse, actix_web::Error> {
+pub fn get_mock_search_results() -> Result<Vec<SearchResult>, actix_web::Error> {
     let dir_path = "./src/constants/mock/google_search/test";
 
     if !Path::new(dir_path).exists() {
@@ -59,7 +59,16 @@ pub async fn retrieve_relevant_search_data() -> Result<HttpResponse, actix_web::
         all_search_items.extend(response.items);
     }
 
-    let updated_search_items = retrieve_all_website_text_content(all_search_items).await;
+    Ok(all_search_items)
+}
+
+pub async fn retrieve_relevant_search_data_mock() -> Result<HttpResponse, actix_web::Error> {
+    let mock_search_results = get_mock_search_results();
+    let search_results = match mock_search_results {
+        Ok(results) => results,
+        Err(e) => return Err(e),
+    };
+    let updated_search_items = retrieve_all_website_text_content(search_results).await;
 
     Ok(HttpResponse::Ok().json(updated_search_items))
 }
@@ -72,8 +81,8 @@ pub async fn scrape_website(url: &str) -> Result<String, Box<dyn Error + Send + 
     let document = Html::parse_document(&body);
 
     let allowed_tags = [
-        "h1", "h2", "h3", "h4", "h5", "h6", "p", "span", "a", "article", "sup", "table","img", "link",
-        "figure",
+        "h1", "h2", "h3", "h4", "h5", "h6", "p", "span", "a", "article", "sup", "table", "img",
+        "link", "figure",
     ];
 
     let mut text_content = String::new();
@@ -182,7 +191,9 @@ pub async fn search(body: Json<SearchRequest>) -> Result<HttpResponse, Box<dyn E
         search_results.extend(search_items);
     }
 
-    let stringified_search_results = serde_json::to_string(&search_results)?;
+    let updated_search_results = retrieve_all_website_text_content(search_results).await;
+
+    let stringified_search_results = serde_json::to_string(&updated_search_results)?;
 
     let ai_request = AiCompletionRequest {
         query: MOST_RELEVANT_CONTENT_PROMPT.to_string()

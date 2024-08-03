@@ -44,8 +44,8 @@ async fn main() -> std::io::Result<()> {
                     web::post().to(routes::googlexity::google_ai_completion),
                 );
                 r.route(
-                    "/relevant-results",
-                    web::get().to(routes::googlexity::retrieve_relevant_search_data),
+                    "/mock/relevant-results",
+                    web::get().to(routes::googlexity::retrieve_relevant_search_data_mock),
                 );
             }))
     })
