@@ -65,6 +65,9 @@ Body:
     "query": "",
      // (Required)
      // The query to search for
+    "custom_instructions": "",
+     // (Optional: defaults to "CUSTOM_FORMATTING_PROMPT" from `constants/config.rs`)
+     // Custom formatting instructions for the last AI query
     "model": "",
      // (Optional: defaults to "gemini-1.5-pro-latest")
      // The Google AI model to use, see config.rs or 
@@ -73,6 +76,9 @@ Body:
      // (Optional: defaults to infinite)
      // The maximum number of search results to use in the
      // context of the last AI query
+    "optimize_query": "", 
+     // (Optional: defaults to true)
+     // Whether to optimize the query for search engines. 
     "max_optimizations": "", 
      // (Optional: defaults to infinite)
      // The maximum number of optimized queries that will be used 

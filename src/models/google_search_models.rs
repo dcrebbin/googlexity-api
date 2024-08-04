@@ -6,6 +6,8 @@ pub struct SearchRequest {
     pub query: String,
     pub model: Option<String>,
     pub max_results: Option<i32>,
+    pub optimize_query: Option<bool>,
+    pub custom_instructions: Option<String>,
     pub max_optimizations: Option<i32>,
     pub depthfull_search: Option<bool>,
 }
@@ -135,6 +137,10 @@ pub struct CseImage {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Person {
-    pub name: String,
-    pub url: String,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub name: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub url: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub org: Option<String>,
 }
